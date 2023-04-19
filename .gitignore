@@ -69,5 +69,5 @@ yarn-error.log
 .yarn-integrity
 
 # Lock files
-.lock
+yarn.lock
 package-lock.json
