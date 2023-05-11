@@ -1,19 +1,23 @@
 import * as React from "react"
 import TextBox from "../textbox"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 
 const AboutSection = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: {eq: "about-1.png"}) {
+      image1: file(relativePath: {eq: "about-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData (
+            width: 800
+          )
         }
       }
-      image2: file(relativePath: {eq: "about-2.png"}) {
+      image2: file(relativePath: {eq: "about-2.JPG"}) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData (
+            width: 800
+          )
         }
       }
     }
@@ -26,13 +30,17 @@ const AboutSection = (props) => {
       <div className="Container">
         <div className="FlexWrap" style={{alignItems: 'flex-start'}}>
           <TextBox width={520} sticky>
-            <h2>ABOUT US</h2>
-            <p>Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
-
-            <p>Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
+            <h2>Quality Assured</h2>
+            <p className="BodyText">Moli Industries has firmly established itself as a reliable source for structural steel projects from design to assembly since it began operating in Calgary in 1984.  A dynamic and ambitious group committed to open communication with clients and vendors, dedicated to it's quality management system to exceed the client expectations, and diligent to ensure the safety of employees, customers and vendors on our worksites.</p>
             <Link to="/about" className="BtnContained">
               Learn More
             </Link>
+
+            <div className="LineGraphic2">
+              <StaticImage
+                src="../../images/graphic-2.svg"
+              />
+            </div>
             
           </TextBox>
           <div style={{display: 'flex', flexDirection: 'column', gap: 20}}>
@@ -45,6 +53,7 @@ const AboutSection = (props) => {
           </div>
         </div>
       </div>
+      
     </section>
   )
 }

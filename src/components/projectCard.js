@@ -27,8 +27,6 @@ const ProjectCard = (props) => {
         <span>{number}</span>
         <div>
           <p className={sty.Name}>{name}</p>
-          <p>{description}</p>
-          <p>{type}</p>
         </div>
       </div>
     </div>

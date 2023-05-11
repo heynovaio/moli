@@ -21,23 +21,23 @@ const DifferenceSection = (props) => {
         <div className="FlexWrap">
           <GatsbyImage image={image}/>
           <TextBox width={752}>
-            <h2>HOW WE ARE DIFFERENT</h2>
+            <h2>Shared Values</h2>
             <div className={PointGrid}>
               <div>
-                <p className="Subtitle-2">SAFETY</p>
-                <p>Ut porta nibh tellus sed vitae fringilla id est mauris. Aliquam magnis fringilla tristique et quam. Vitae orci lectus egestas augue arcu mattis placerat nunc.</p>
+                <h3 className="Subtitle-2">Quality</h3>
+                <p>Our policy principles are to comply with all applicable laws and regulations, diligence to safety, seek continual improvements and open communication to uphold the quality management system.</p>
               </div>
               <div>
-                <p className="Subtitle-2">PERFORMANCE</p>
-                <p>Ut porta nibh tellus sed vitae fringilla id est mauris. Aliquam magnis fringilla tristique et quam. Vitae orci lectus egestas augue arcu mattis placerat nunc.</p>
+                <h3 className="Subtitle-2">Performance</h3>
+                <p>Our fabrication shop uses exceptional automation equipment & staff to provide timely fabrication, while ensuring superior quality results.</p>
               </div>
               <div>
-                <p className="Subtitle-2">QUALITY</p>
-                <p>Ut porta nibh tellus sed vitae fringilla id est mauris. Aliquam magnis fringilla tristique et quam. Vitae orci lectus egestas augue arcu mattis placerat nunc.</p>
+                <h3 className="Subtitle-2">Safety</h3>
+                <p>Our preventative approach to safety requires the commitment from management, employees, contractors, vendors and customers to avoid serious incidents. </p>
               </div>
               <div>
-                <p className="Subtitle-2">RELIABILITY</p>
-                <p>Ut porta nibh tellus sed vitae fringilla id est mauris. Aliquam magnis fringilla tristique et quam. Vitae orci lectus egestas augue arcu mattis placerat nunc.</p>
+                <h3 className="Subtitle-2">Reliability</h3>
+                <p>High skill base and extensive experience allows our team to consistently supply quality products, competitive pricing and timely delivery to meet the most demanding needs of our clients.</p>
               </div>
             </div>
           </TextBox>

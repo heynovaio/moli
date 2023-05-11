@@ -9,26 +9,26 @@ const ValuesSection = (props) => {
       <div className="Container">
         <div className="FlexWrap" style={{alignItems: 'flex-start'}}>
           <TextBox width={624}>
-            <h2>OUR VALUES</h2>
-            <p>Imperdiet gravida viverra convallis et dolor at viverra. Nascetur at euismod consectetur id amet. Pellentesque maecenas sed pretium cras blandit ullamcorper id tortor sem. Nisl pretium ac amet diam feugiat nisl elit a. Mi mattis lorem libero dignissim.</p>
+            <h2>Our Mission </h2>
+            <p className="BodyText">is to provide exceptional steel design, fabrication, and erection services through ongoing innovation, skilled production, and a marked commitment to excellence.</p>
           </TextBox>
           <div>
             <div className={ValueGrid}>
               <div>
-                <p className="Subtitle-2">SAFETY</p>
-                <p>Ut porta nibh tellus sed vitae fringilla id est mauris. Aliquam magnis fringilla tristique et quam. Vitae orci lectus egestas augue arcu mattis placerat nunc.</p>
+                <h3 className="Subtitle-2">Quality</h3>
+                <p>Our policy principles are to comply with all applicable laws and regulations, diligence to safety, seek continual improvements and open communication to uphold the quality management system.</p>
               </div>
               <div>
-                <p className="Subtitle-2">PERFORMANCE</p>
-                <p>Ut porta nibh tellus sed vitae fringilla id est mauris. Aliquam magnis fringilla tristique et quam. Vitae orci lectus egestas augue arcu mattis placerat nunc.</p>
+                <h3 className="Subtitle-2">Performance</h3>
+                <p>Our fabrication shop uses exceptional automation equipment & staff to provide timely fabrication, while ensuring superior quality results.</p>
               </div>
               <div>
-                <p className="Subtitle-2">QUALITY</p>
-                <p>Ut porta nibh tellus sed vitae fringilla id est mauris. Aliquam magnis fringilla tristique et quam. Vitae orci lectus egestas augue arcu mattis placerat nunc.</p>
+                <h3 className="Subtitle-2">Safety</h3>
+                <p>Our preventative approach to safety requires the commitment from management, employees, contractors, vendors and customers to avoid serious incidents. </p>
               </div>
               <div>
-                <p className="Subtitle-2">RELIABILITY</p>
-                <p>Ut porta nibh tellus sed vitae fringilla id est mauris. Aliquam magnis fringilla tristique et quam. Vitae orci lectus egestas augue arcu mattis placerat nunc.</p>
+                <h3 className="Subtitle-2">Reliability</h3>
+                <p>High skill base and extensive experience allows our team to consistently supply quality products, competitive pricing and timely delivery to meet the most demanding needs of our clients.</p>
               </div>
             </div>
           </div>

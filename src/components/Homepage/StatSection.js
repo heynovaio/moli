@@ -1,6 +1,7 @@
 import * as React from "react"
-import { LineDivide, Stat } from '../../styles/pages/home.module.scss'
+import { LineDivide, Stat, LineGraphic1 } from '../../styles/pages/home.module.scss'
 import TextBox from "../textbox"
+import { StaticImage } from "gatsby-plugin-image"
 
 const StatSection = (props) => {
 
@@ -14,8 +15,8 @@ const StatSection = (props) => {
             </h2>
           </TextBox>
           <TextBox width={750}>
-            <p>
-              High quality standards are essential in all aspects of our daily operations for our expert team to design, fabricate and safely install structural steel. We work closely with our clients and suppliers to establish our commitment to excellence.
+            <p className="BodyText">
+            High standards are essential in all aspects of our daily operations for our expert team to design, fabricate and safely install structural steel. We work closely with our clients and suppliers to provide proven results with a commitment to excellence.
             </p>
           </TextBox>
         </div>
@@ -28,7 +29,7 @@ const StatSection = (props) => {
 
           <div className={Stat}>
             <span>28</span>
-            <p>Year MHSA Membership</p>
+            <p>Years MHSA Membership</p>
           </div>
 
           <div className={Stat}>
@@ -36,10 +37,15 @@ const StatSection = (props) => {
             <p>Sq. ft. Shop Space</p>
           </div>
           <div className={Stat}>
-            <span>95%</span>
-            <p>COR Score Average </p>
+            <span>95%+</span>
+            <p>COR audit scores</p>
           </div>
         </div>
+      </div>
+      <div className={LineGraphic1}>
+        <StaticImage
+          src="../../images/graphic-1.svg"
+        />
       </div>
     </section>
   )

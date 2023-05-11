@@ -1,9 +1,11 @@
 @use '../abstracts/variables' as v;
 
+
 .AboutSection {
   background: url('../../images/about-hero.png');
   background-size: cover;
   padding-bottom: 0;
+  height: 60vh;
 }
 .AboutTitle{
   height: 600px;
@@ -23,4 +25,17 @@
     max-width: 320px;
   }
 
+}
+
+.CreditsList {
+  font-size: 20px;
+  list-style: none;
+  li {
+    margin-bottom: 25px;
+  }
+
+  span {
+    font-weight: bold;
+    letter-spacing: 0.02em;
+  }
 }

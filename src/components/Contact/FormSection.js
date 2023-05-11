@@ -21,7 +21,10 @@ const FormSection = (props) => {
         <div className="FlexWrap">
           <GatsbyImage image={image}/>
           <TextBox width={750}>
-            <h2>SEND MESSAGE</h2>
+            <h2>Connect with us</h2>
+            <p className="BodyText">
+              Fill out the form below to provide details about your project or inquiry. Interested in career opportunities with Moli? Please send cover letter and resume to <a href="mailto:careers@moli.ca">careers@moli.ca</a>
+            </p>
             <form className={Form}>
               <label htmlFor="name">
                 Name

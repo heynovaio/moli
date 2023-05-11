@@ -34,6 +34,7 @@
 .Info {
   display: flex;
   gap: 30px;
+  align-items: center;
   > div {
     display: flex;
     flex-direction: column;
@@ -44,10 +45,13 @@
     font-size: 80px;
     line-height: 1;
     display: block;
+    align-self: flex-start;
   }
 }
 .Name {
-  font-weight: 500;
-  font-size: 40px;
-
+  font-weight: 300;
+  font-size: 38px;
+  max-width: 500px;
+  line-height: 1.2;
+ 
 }

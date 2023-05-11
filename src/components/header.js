@@ -11,9 +11,10 @@ const Header = ({ siteTitle }) => {
   return (
     <header className={sty.Header}>
       <div className="FlexWrap" style={{padding: '0 20px'}}>
-        <Link to='/'>
+        <Link to='/' className={sty.logo}>
           <StaticImage
-            src="../images/logo.png"
+            src="../images/moli-logo-light@2x.svg"
+            width="180"
             alt='Moli Logo'
           />
         </Link>

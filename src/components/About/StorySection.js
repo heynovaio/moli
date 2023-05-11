@@ -20,8 +20,8 @@ const StorySection = (props) => {
         <div className="FlexWrap">
           <TextBox width={644}>
             <h2>OUR STORY</h2>
-            <p>Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
-            <p>Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
+            <p className="BodyText">Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
+            <p className="BodyText">Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
           </TextBox>
           <GatsbyImage image={image}/>
         </div>

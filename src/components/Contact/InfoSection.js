@@ -21,16 +21,17 @@ const InfoSection = (props) => {
       <div className="Container">
         <div className="FlexWrap">
           <TextBox width={644}>
-            <h1>CONTACT US</h1>
-            <p>Imperdiet gravida viverra convallis et dolor at viverra. Nascetur at euismod consectetur id amet. Pellentesque maecenas sed pretium cras blandit ullamcorper id tortor sem. </p>
+            <h1>Connect with us</h1>
+            <p className="BodyText">Fill out the form below to provide details about your project or inquiry. Interested in career opportunities with Moli? Please send cover letter and resume to careers@moli.ca
+</p>
             <br/>
             <div className={ContactListItem}>
               <FaPhone/>
-              <p>(123) 456-7891</p>
+              <p className="BodyText"><a href="tel:1-403-250-2733">1-403-250-2733</a></p>
             </div>
             <div className={ContactListItem}>
               <FaMapMarkerAlt/>
-              <p>Add address here <br/>amet ullamco dolor proident <br/>Exercitation velit ea </p>
+              <p className="BodyText">1880 Centre Avenue N.E., Calgary Alberta T2E 0A6</p>
             </div>
           </TextBox>
           <GatsbyImage image={image}/>

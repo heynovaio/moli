@@ -2,18 +2,23 @@ import * as React from "react"
 import TextBox from "../textbox"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { CreditsList } from '../../styles/pages/about.module.scss'
 
 const OfficeSection = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: {eq: "office-1.png"}) {
+      image1: file(relativePath: {eq: "about-office-2.jpg"}) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData (
+            width: 740
+          )
         }
       }
-      image2: file(relativePath: {eq: "office-2.png"}) {
+      image2: file(relativePath: {eq: "about-office-3.jpg"}) {
         childImageSharp {
-          gatsbyImageData
+          gatsbyImageData (
+            width: 740
+          )
         }
       }
     }
@@ -25,13 +30,12 @@ const OfficeSection = (props) => {
       <div className="Container">
         <div className="FlexWrap" style={{alignItems: 'flex-start'}}>
           <TextBox width={520} sticky>
-            <h2>OUR OFFICE</h2>
-            <p>Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
-
-            <p>Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
-            <Link to="/about" className="BtnContained">
-              Learn More
-            </Link>
+            <h2>Affiliations</h2>
+            <ul className={CreditsList}>
+              <li><span>Engineering Associations:</span> British Columbia (APEGBC), Alberta (APEGA), Saskatchewan (APEGS), Manitoba (APEGM) and Ontario (PEO)</li>
+              <li><span>Certifying Partners:</span> Manufacturers' Health and Safety Association (MHSA); COR Certified and Partnership in Injury Reduction (PIR)</li>
+              <li><span>Accreditations:</span> Canadian Welding Bureau CSA Standard W47.1 and Quality Management System ISO 9001:2015 </li>
+            </ul>  
             
           </TextBox>
           <div style={{display: 'flex', flexDirection: 'column', gap: 20}}>

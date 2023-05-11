@@ -7,44 +7,76 @@ import ProjectCard from "../projectCard"
 const ProjectsSection = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: {eq: "projects/project-1.png"}) {
+      image1: file(relativePath: {eq: "projects/project-1-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image2: file(relativePath: {eq: "projects/project-2.png"}) {
+      image2: file(relativePath: {eq: "projects/project-2-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image3: file(relativePath: {eq: "projects/project-3.png"}) {
+      image3: file(relativePath: {eq: "projects/project-3-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image4: file(relativePath: {eq: "projects/project-4.png"}) {
+      image4: file(relativePath: {eq: "projects/project-4-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image5: file(relativePath: {eq: "projects/project-5.png"}) {
+      image5: file(relativePath: {eq: "projects/project-5-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image6: file(relativePath: {eq: "projects/project-6.png"}) {
+      image6: file(relativePath: {eq: "projects/project-6-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
       image7: file(relativePath: {eq: "projects/project-7.png"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
       image8: file(relativePath: {eq: "projects/project-8.png"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
     }
@@ -60,14 +92,13 @@ const ProjectsSection = (props) => {
   return (
     <section>
       <div className="Container">
-        <h1>PROJECTS</h1>
+        <h1>Featured Projects</h1>
         <div className={ProjectsGrid}>
           <ProjectCard
             image={image1}
             number='01'
-            name='Project Name'
-            description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-            type='commercial'
+            name='Ronmor Phase III Building Lift'
+           
             expanded={{
               bio: "",
               images: []
@@ -76,9 +107,8 @@ const ProjectsSection = (props) => {
           <ProjectCard
             image={image2}
             number='02'
-            name='Project Name'
-            description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-            type='commercial'
+            name='Stampede Roundup Center Expansion'
+            
             expanded={{
               bio: '',
               images: []
@@ -87,9 +117,8 @@ const ProjectsSection = (props) => {
           <ProjectCard
             image={image3}
             number='03'
-            name='Project Name'
-            description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-            type='commercial'
+            name='Chateau Lake Louise Conference Center Name'
+           
             expanded={{
               bio: '',
               images: []
@@ -98,9 +127,7 @@ const ProjectsSection = (props) => {
           <ProjectCard
             image={image4}
             number='04'
-            name='Project Name'
-            description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-            type='commercial'
+            name='Northern Telecom Wireless Facility'
             expanded={{
               bio: '',
               images: []
@@ -109,9 +136,8 @@ const ProjectsSection = (props) => {
           <ProjectCard
             image={image5}
             number='05'
-            name='Project Name'
-            description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-            type='commercial'
+            name='Country Club of the Hamptons'
+
             expanded={{
               bio: '',
               images: []
@@ -120,20 +146,16 @@ const ProjectsSection = (props) => {
           <ProjectCard
             image={image6}
             number='06'
-            name='Project Name'
-            description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-            type='commercial'
+            name='Trail Community Center'
             expanded={{
               bio: '',
               images: []
             }}
-          />
+          />  
           <ProjectCard
             image={image7}
             number='07'
-            name='Project Name'
-            description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-            type='commercial'
+            name='Custom work for private residence'
             expanded={{
               bio: '',
               images: []
@@ -142,9 +164,7 @@ const ProjectsSection = (props) => {
           <ProjectCard
             image={image8}
             number='08'
-            name='Project Name'
-            description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-            type='commercial'
+            name='Southern Alberta Institute of Technology'
             expanded={{
               bio: '',
               images: []

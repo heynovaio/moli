@@ -4,7 +4,8 @@ import * as React from "react"
 import ProjectCard from "../projectCard";
 import { useSnapCarousel } from "react-snap-carousel";
 import { FaChevronLeft, FaChevronRight} from 'react-icons/fa'
-import { SlideControl, CarouselNav, CarouselItem,  Index, BtnNav } from '../../styles/pages/home.module.scss'
+import { SlideControl, CarouselNav, carousel, CarouselItem,  Index, BtnNav, WorkTitle } from '../../styles/pages/home.module.scss'
+import TextBox from "../textbox"
 
 const CarouselSection = (props) => {
   const { scrollRef, pages, activePageIndex, next, prev, goTo } =
@@ -12,32 +13,52 @@ const CarouselSection = (props) => {
 
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: {eq: "projects/project-1.png"}) {
+      image1: file(relativePath: {eq: "projects/project-1-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image2: file(relativePath: {eq: "projects/project-2.png"}) {
+      image2: file(relativePath: {eq: "projects/project-2-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image3: file(relativePath: {eq: "projects/project-3.png"}) {
+      image3: file(relativePath: {eq: "projects/project-3-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image4: file(relativePath: {eq: "projects/project-4.png"}) {
+      image4: file(relativePath: {eq: "projects/project-4-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image5: file(relativePath: {eq: "projects/project-5.png"}) {
+      image5: file(relativePath: {eq: "projects/project-5-1.JPG"}) {
         childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
+          gatsbyImageData(
+            layout: FULL_WIDTH
+            width: 740
+            height: 391
+          )
         }
       }
-      image6: file(relativePath: {eq: "projects/project-6.png"}) {
+      image6: file(relativePath: {eq: "projects/project-6-1.JPG"}) {
         childImageSharp {
           gatsbyImageData(layout: FULL_WIDTH)
         }
@@ -52,8 +73,13 @@ const CarouselSection = (props) => {
   const image6 = getImage(data.image6)
 
   return (
-    <section>
+    <section className={carousel}>
       <div className="Container">
+        <TextBox width={400}>
+          <h2 className={WorkTitle}>
+            Our Work
+          </h2>
+        </TextBox>
         <div className={CarouselNav}>
           <div className={SlideControl}>
             <button onClick={() => prev()} aria-label="Prev" className={BtnNav}><FaChevronLeft/></button>
@@ -79,34 +105,31 @@ const CarouselSection = (props) => {
             <ProjectCard
               image={image1}
               number='01'
-              name='Project Name'
-              description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-              type='commercial'
+              name='Ronmor Phase III Building Lift'
+              
             />
           </li>
           <li className={CarouselItem}>
             <ProjectCard
               image={image2}
               number='02'
-              name='Project Name'
-              description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-              type='commercial'
+              name='Stampede Roundup Center Expansion'
+             
             />
           </li>
           <li className={CarouselItem}>
             <ProjectCard
               image={image3}
               number='03'
-              name='Project Name'
-              description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-              type='commercial'
+              name='Chateau Lake Louise Conference Center Name'
+
             />
           </li>
           <li className={CarouselItem}>
             <ProjectCard
               image={image4}
               number='04'
-              name='Project Name'
+              name='Northern Telecom Wireless Facility'
               description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
               type='commercial'
             />
@@ -115,18 +138,15 @@ const CarouselSection = (props) => {
             <ProjectCard
               image={image5}
               number='05'
-              name='Project Name'
-              description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-              type='commercial'
+              name='Country Club of the Hamptons'
+
             />
           </li>
           <li className={CarouselItem}>
             <ProjectCard
               image={image6}
               number='06'
-              name='Project Name'
-              description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
-              type='commercial'
+              name='Trail Community Center'
             />
           </li> 
         </ul>

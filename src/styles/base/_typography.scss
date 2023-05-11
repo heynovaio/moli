@@ -49,19 +49,20 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   padding: 0;
   font-size: 151px;
-  line-height: 110%;
+  line-height: 100%;
+  margin-bottom: 10px;
 
   background: linear-gradient(121.3deg, #6294C5 1.24%, white 95.57%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-
+  max-width: max-content;
   text-shadow: 45px 243px 99px rgba(0, 0, 0, 0.01), 26px 136px 83px rgba(0, 0, 0, 0.05), 11px 61px 62px rgba(0, 0, 0, 0.09), 3px 15px 34px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
 }
 h2 {
   font-size: 95px;
-  line-height: 114px;
+  line-height: 1.15;
   background: linear-gradient(93deg, #5E98CB -2.45%, #FFFFFF 60.8%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -75,23 +76,27 @@ h2 {
 .Subtitle-1 {
   @extend .text;
   font-size: 40px;
-  line-height: 28px;
+  line-height: 1;
 }
 .Subtitle-2 {
   @extend .text;
   font-size: 35px;
   line-height: auto;
+  text-transform: uppercase;
 }
 
 .BodyText {
   @extend .text;
   font-size: 20px;
   line-height: 150%;
+  margin-bottom: 30px;
+  font-weight: 300;
 }
 .BodyText-lg {
   @extend .text;
   font-size: 22px;
   line-height: 150%;
+  margin-bottom: 30px;
 }
 
 img {
