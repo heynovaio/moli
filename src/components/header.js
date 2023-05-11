@@ -8,7 +8,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className={sty.Header}>
-      <div className="FlexWrap" style={{padding: '0 20px'}}>
+      <div style={{padding: '0 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between'}}>
         <Link to='/' className={sty.logo}>
           <StaticImage
             src="../images/moli-logo-light@2x.svg"

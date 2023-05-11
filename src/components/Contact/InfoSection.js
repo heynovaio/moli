@@ -26,11 +26,11 @@ const InfoSection = (props) => {
 </p>
             <br/>
             <div className={ContactListItem}>
-              <FaPhone/>
+              <FaPhone className="BodyText"/>
               <p className="BodyText"><a href="tel:1-403-250-2733">1-403-250-2733</a></p>
             </div>
             <div className={ContactListItem}>
-              <FaMapMarkerAlt/>
+              <FaMapMarkerAlt className="BodyText"/>
               <p className="BodyText">1880 Centre Avenue N.E., Calgary Alberta T2E 0A6</p>
             </div>
           </TextBox>

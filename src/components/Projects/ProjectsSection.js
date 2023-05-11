@@ -4,109 +4,37 @@ import {  getImage } from "gatsby-plugin-image"
 import { ProjectsGrid } from '../../styles/pages/projects.module.scss'
 
 import ProjectCard from "../projectCard"
+import { ProjectImages } from "../../hooks/project-image-hooks"
 const ProjectsSection = (props) => {
-  const data = useStaticQuery(graphql`
-    query {
-      image1: file(relativePath: {eq: "projects/project-1-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image2: file(relativePath: {eq: "projects/project-2-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image3: file(relativePath: {eq: "projects/project-3-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image4: file(relativePath: {eq: "projects/project-4-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image5: file(relativePath: {eq: "projects/project-5-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image6: file(relativePath: {eq: "projects/project-6-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image7: file(relativePath: {eq: "projects/project-7.png"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image8: file(relativePath: {eq: "projects/project-8.png"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image9: file(relativePath: {eq: "projects/additional-1.png"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-      image10: file(relativePath: {eq: "projects/additional-2.png"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
-        }
-      }
-    }
-  `)
-  const image1 = getImage(data.image1)
-  const image2 = getImage(data.image2)
-  const image3 = getImage(data.image3)
-  const image4 = getImage(data.image4)
-  const image5 = getImage(data.image5)
-  const image6 = getImage(data.image6)
-  const image7 = getImage(data.image7)
-  const image8 = getImage(data.image8)
-  const image9 = getImage(data.image9)
-  const image10 = getImage(data.image10)
+  const data = ProjectImages()
 
-  const bio = `Tristique tristique non elit ac at. Tincidunt nunc odio lectus pellentesque lacinia amet pharetra. Sed lobortis quam praesent in sed. Ultrices feugiat tortor consectetur turpis. Lorem auctor ac ipsum duis fringilla laoreet. Fames venenatis amet lectus tellus amet sollicitudin eu non. \n\n
-  
-  Nisl massa est porta urna eget et mauris nam. Lobortis massa at varius lectus lectus eleifend dapibus lectus adipiscing. Feugiat nullam in elit pretium volutpat accumsan faucibus. Tortor sit viverra lacus urna tempus nunc tellus. Sed ipsum in eu condimentum. Curabitur accumsan sagittis sed amet amet et turpis tincidunt. Risus at ut ipsum et malesuada eget nulla.\n\n
-  
-  Vitae mollis est dictum senectus sit id. Elit sed ullamcorper lectus sit elit ac nunc. Donec convallis in purus pellentesque amet tempor donec. Fermentum risus pulvinar aliquam convallis cras viverra. Ligula et vitae non vestibulum molestie sed a aliquet pharetra. Bibendum placerat facilisi varius nisl vitae non. Proin adipiscing pretium fames nulla duis in.`
+  const image1_1 = getImage(data.image1_1)
+  const image1_2 = getImage(data.image1_2)
+  const image1_3 = getImage(data.image1_3)
+  const image2_1 = getImage(data.image2_1)
+  const image2_2 = getImage(data.image2_2)
+  const image2_3 = getImage(data.image2_3)
+  const image3_1 = getImage(data.image3_1)
+  const image3_2 = getImage(data.image3_2)
+  const image3_3 = getImage(data.image3_3)
+  const image3_4 = getImage(data.image3_4)
+  const image4_1 = getImage(data.image4_1)
+  const image4_2 = getImage(data.image4_2)
+  const image4_3 = getImage(data.image4_3)
+  const image5_1 = getImage(data.image5_1)
+  const image5_2 = getImage(data.image5_2)
+  const image5_3 = getImage(data.image5_3)
+  const image6_1 = getImage(data.image6_1)
+  const image6_2 = getImage(data.image6_2)
+  const image6_3 = getImage(data.image6_3)
+  const image7_1 = getImage(data.image7_1)
+  const image7_2 = getImage(data.image7_2)
+  const image7_3 = getImage(data.image7_3)
+  const image7_4 = getImage(data.image7_4)
+  const image8_1 = getImage(data.image8_1)
+  const image8_2 = getImage(data.image8_2)
+  const image8_3 = getImage(data.image8_3)
+  const image8_4 = getImage(data.image8_4)
 
   return (
     <section>
@@ -114,81 +42,84 @@ const ProjectsSection = (props) => {
         <h1>Featured Projects</h1>
         <div className={ProjectsGrid}>
           <ProjectCard
-            image={image1}
+            image={image1_1}
             number='01'
             name='Ronmor Phase III Building Lift'
            
             expanded={{
-              bio: 'This challenging project involved a last-minute change from a one-storey building to a two-storey building, after the structural steel and metal deck had already been completed. To accomplish this, the roof structure was cut into large sections, reinforced as required, then removed and set aside. A floor structure was built below, then the roof sections were craned back into place above.',
-              additionalImages: [image9,image10]
+              bio: '<div>This challenging project involved a last-minute change from a one-storey building to a two-storey building, after the structural steel and metal deck had already been completed.&nbsp;<div><br><div>To accomplish this, the roof structure was cut into large sections, reinforced as required, then removed and set aside. A floor structure was built below, then the roof sections were craned back into place above.<br></div></div></div>',
+              additionalImages: [image1_2,image1_3]
             }}
           />
           <ProjectCard
-            image={image2}
+            image={image2_1}
             number='02'
             name='Stampede Roundup Center Expansion'
             
             expanded={{
-              bio: 'Long known as an iconic component of the Calgary Stampede facilities, the original structural steel construction of the current BMO Centre was completed by Moli Industries in 1999. Our scope of work included:approximately $4 million in steelmain columns in the built up sections are approximately 16,000 lbs. eachmain trusses are over 65,000 lbs. each with 170' clear span, 30' deep, and over 1,000 bolts per trussExtensive suspended catwalk systems within the roof system',
-              additionalImages: [image9,image10]
+              bio: `<div>Long known as an iconic component of the Calgary Stampede facilities, the original structural steel construction of the current BMO Centre was completed by Moli Industries in 1999.&nbsp;</div><div><div>Our scope of work included:<br><div><ul><li>approximately $4 million in steel</li><li>main columns in the built up sections are approximately 16,000 lbs. each</li><li>main trusses are over 65,000 lbs. each with 170' clear span, 30' deep, and over 1,000 bolts per truss</li><li>Extensive suspended catwalk systems within the roof system</li></ul></div></div></div>`,
+              additionalImages: [image2_2,image2_3]
             }}
           />
           <ProjectCard
-            image={image3}
+            image={image3_1}
             number='03'
             name='Chateau Lake Louise Conference Center Name'
            
             expanded={{
-              bio: bio,
-              additionalImages: [image9,image10]
+              bio: `<div><div>Located in the Mount Temple Wing
+              of the Fairmont Chateau Lake Louise Hotel, this premiere conference center
+              serves as the meeting point for a wide variety of organizations and
+              corporations.</div></div><div>The structural steel for this work was a challenge, as the limitations in the access road size would not allow a large enough crane to be mobilized for the steel installation. Instead, a smaller crane was brought in to bring the steel in to one end of the building, and an innovative hand-cranking system was used to slowly move the steel into place.</div>`,
+              additionalImages: [image3_2,image3_3]
             }}
           />
           <ProjectCard
-            image={image4}
+            image={image4_1}
             number='04'
             name='Northern Telecom Wireless Facility'
             expanded={{
-              bio: bio,
-              additionalImages: [image9,image10]
+              bio: `<div>Our work on this project was completed for Nortel Networks in 1995. In 2009 it became the Calgary Police Service Headquarters.</div><div>As this was during the peak business period for Nortel, the project was extremely demanding on results, in particular the schedule. This resulted in our crews working over 30' in the air in -30 degree weather to meet the client requirements. For our ability to meet their extreme demands without sacrificing quality, Moli received multiple awards for this work, including the&nbsp; Steve Phelps Mission Impossible Award from the Royal Architectural Order of Westwinds.</div><div>Our scope of work:</div><div><ul><li>Over 300,00 square feet, comprised&nbsp;<div>of a two story`,
+              additionalImages: [image4_2,image4_3]
             }}
           />
           <ProjectCard
-            image={image5}
+            image={image5_1}
             number='05'
             name='Country Club of the Hamptons'
 
             expanded={{
-              bio: bio,
-              additionalImages: [image9,image10]
+              bio: `<div><div>The Country Club of the Hamptons is a remarkable private 18 hole golf course tucked in Calgary's NW community of the Hamptons.&nbsp;</div><div>This project was a work of pride for Moli, involving innovative design-build approaches to create 20' roof cantilevers all around the building, as well as a feature open-riser steel spiral staircase.&nbsp;</div></div>`,
+              additionalImages: [image5_2,image5_3]
             }}
           />
           <ProjectCard
-            image={image6}
+            image={image6_1}
             number='06'
             name='Trail Community Center'
             expanded={{
-              bio: bio,
-              additionalImages: [image9,image10]
+              bio: `<div>This project involved design &amp; construction of a 3-dimensional truss system to support the large spanning roof areas.</div><div>Similar to the Chateau Lake Louise Meeting Conference Centre, the site work on this project was limited by access, and a large crane could not be brought in to install the steel. Creative approaches to the installation were required to complete this work.</div>`,
+              additionalImages: [image6_2,image6_3]
             }}
           />  
           <ProjectCard
-            image={image7}
+            image={image7_1}
             number='07'
             name='Custom work for private residence'
             expanded={{
-              bio: bio,
-              additionalImages: [image9,image10]
+              bio: `<div>Moli has worked on many residential structures over the years, from large multi-family projects to single-family detached homes.&nbsp;</div><div>The single-family homes are often the most interesting and challenging projects, as they require close coordination with trades to meet very strict requirements. There are all sorts of challenges that can be involved in these projects, from meeting extremely strict floor depth requirements to having floating artistic stairs without any intermediate structural supports.</div>`,
+              additionalImages: [image7_2,image7_3,image7_4]
             }}
           />
           <ProjectCard
-            image={image8}
+            image={image8_1}
             number='08'
             name='Southern Alberta Institute of Technology'
             expanded={{
-              bio: bio,
-              additionalImages: [image9,image10]
+              bio: `<div><div>The post-secondary institution underwent an expansion in 2001.</div><div>Our scope of work:</div><div><ul><li><div>Approximately $1.5 million in steel work</div></li><li>Long span trusses, about 120’ in length</li><li><div>Very heavy interior steel work for Heritage Building</div></li></ul></div></div>`,
+              additionalImages: [image8_2,image8_3,image8_4]
             }}
-          />
+          /> 
         </div>
       </div>
     </section>

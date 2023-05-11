@@ -20,8 +20,7 @@ const StorySection = (props) => {
         <div className="FlexWrap">
           <TextBox width={644}>
             <h2>OUR STORY</h2>
-            <p className="BodyText">Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
-            <p className="BodyText">Ultricies ac gravida et dui. Arcu volutpat pretium consectetur sit dolor habitasse orci ut. Erat phasellus massa dolor vestibulum luctus mi nisl. Justo aliquet orci eleifend leo et. Vestibulum nibh nec ultrices at nunc varius id. At tincidunt eget posuere eu molestie non nulla.</p>
+            <p className="BodyText">Moli Industries has firmly established itself as a reliable source for structural steel projects from design to assembly since it began operating in Calgary in 1984.&nbsp; A dynamic and ambitious group&nbsp;committed&nbsp;to open communication with clients and vendors, dedicated to it's quality management system to exceed the client expectations, and diligent to ensure the safety of employees, customers and vendors on our worksites.</p>
           </TextBox>
           <GatsbyImage image={image}/>
         </div>

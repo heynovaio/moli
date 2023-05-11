@@ -14,7 +14,6 @@ const ProjectCard = (props) => {
     expanded, 
   } = props
   const [expandState, setExpandState] = React.useState(false)
-  const [scrollPosition, setScrollPosition] = React.useState(0);
 
   function replaceWithBr() {
     return expanded?.bio.replace(/\n/g, "<br />")
@@ -27,13 +26,19 @@ const ProjectCard = (props) => {
     }
   }
 
-
+  const wide = {
+    aspectRatio: '700/426'
+    
+  }
+  const tall = {
+    aspectRatio: '342/408'
+  }
   return (
     <>
     
       <div className={sty.Card}>
         <div className={sty.ImageWrap}>
-          <GatsbyImage image={image}/>
+          <GatsbyImage image={image} style={{aspectRatio:'740/390'}}/>
           {expanded && 
             <button className={sty.Expand} onClick={() => setExpandState(!expandState)}>
               <FaExpandAlt/>
@@ -62,13 +67,12 @@ const ProjectCard = (props) => {
               <div className="FlexWrap" style={{alignItems: 'stretch', gap: 30, justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
                 <TextBox width={411}>
                   <p className={sty.Name}>{name}</p>
-                  <p>{description}</p>
-                  <p dangerouslySetInnerHTML={{__html: replaceWithBr()}}/>
+                  <div dangerouslySetInnerHTML={{__html: expanded?.bio}}/>
                 </TextBox>
                 <div className={sty.BioImages}>
-                  <GatsbyImage image={image} style={{aspectRatio:'700/426'}}/>
+                  <GatsbyImage image={image} style={wide}/>
                   {expanded?.additionalImages?.map((img,index) => (
-                    <GatsbyImage image={img} key={index} style={{aspectRatio:'342/408'}}/>
+                    <GatsbyImage image={img} key={index} style={index % 3 === 2 ? wide  : tall}/>
                   ))}
                 </div>
               </div>

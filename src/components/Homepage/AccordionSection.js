@@ -22,7 +22,7 @@ const AccordionSection = (props) => {
       <div className="Container">
         <div className="FlexWrap" style={{alignItems: 'flex-start'}}>
           <GatsbyImage image={image}/>
-          <TextBox width={644}>
+          <TextBox width={644} style={{width: '100%'}}>
             <h2>Our Services</h2>
             <div className={Accordion}>
               <details>

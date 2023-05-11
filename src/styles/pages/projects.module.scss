@@ -64,6 +64,7 @@
   font-size: 38px;
   max-width: 500px;
   line-height: 1.2;
+  margin-bottom: 20px;
   @media screen and (max-width: 1024px){
     font-size: 1.4rem;
   }
@@ -128,7 +129,7 @@
     grid-column: auto/span 1;
     
   }
-  > div:first-child{
+  > div:nth-child(3n-2){
     grid-column: auto/span 2;
   }
 }

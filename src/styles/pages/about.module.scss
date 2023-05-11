@@ -2,15 +2,21 @@
 
 
 .AboutSection {
-  background: url('../../images/about-hero.png');
+  background:  linear-gradient(0deg, rgba(98, 148, 197, 0.6), rgba(98, 148, 197, 0.6)),url('../../images/about-1.jpg');
+  background-blend-mode: multiply;
   background-size: cover;
   padding-bottom: 0;
   height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-end;
+  > div {
+    width: 100%;
+  }
 }
 .AboutTitle{
-  height: 600px;
-  display: flex;
-  align-items: flex-end;
+  display: block;
   > h1 {
     margin-bottom: 0;
     line-height: 100%;

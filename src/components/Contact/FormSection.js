@@ -7,7 +7,7 @@ import { Form } from "../../styles/pages/contact.module.scss"
 const FormSection = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: {eq: "form.png"}) {
+      file(relativePath: {eq: "about-2.JPG"}) {
         childImageSharp {
           gatsbyImageData
         }
@@ -22,9 +22,9 @@ const FormSection = (props) => {
           <GatsbyImage image={image}/>
           <TextBox width={750}>
             <h2>Connect with us</h2>
-            <p className="BodyText">
+            {/* <p className="BodyText">
               Fill out the form below to provide details about your project or inquiry. Interested in career opportunities with Moli? Please send cover letter and resume to <a href="mailto:careers@moli.ca">careers@moli.ca</a>
-            </p>
+            </p> */}
             <form className={Form}>
               <label htmlFor="name">
                 Name
@@ -34,6 +34,10 @@ const FormSection = (props) => {
                 Email
               </label>
               <input type="email" name="email" id="email"/>
+              <label htmlFor="subject">
+                Subject
+              </label>
+              <input type="text" name="subject" id="subject"/>
               <label htmlFor="message">
                 Message
               </label>

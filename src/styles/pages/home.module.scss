@@ -6,11 +6,12 @@
   right: 0;
   height: calc(100% + v.$header-height);
   aspect-ratio: 1221/912;
-  background: url('../../images/above-the-fold.jpg'), rgba(98, 148, 197, 0.65);
+  background: url('../../images/above-the-fold.jpg');
   background-size: cover;
   mix-blend-mode: overlay;
   z-index: -1;
 }
+
 
 .Hero {
   p {
@@ -31,7 +32,9 @@
   display: flex;
   justify-content: flex-end;
   gap: 60px;
-
+  @media screen and (max-width: 700px){
+   justify-content: flex-start;
+  }
   a {
     text-decoration: underline;
     font-size: 22px;
@@ -68,7 +71,7 @@
 .CarouselItem {
   flex-shrink: 0;
   list-style-type: none;
-  width: 50%;
+  width: 48%;
   @media screen and (max-width: 700px){
     width: 100%;
   }
@@ -101,7 +104,12 @@
   }
 }
 .WorkTitle {
-  margin-bottom: -60px;
+  @media screen and (max-width: 700px){
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 700px){
+    margin-bottom: -60px;
+  }
 }
 .ValueGrid {
   display: flex;
@@ -118,15 +126,15 @@
 .Accordion {
   display: flex;
   flex-direction: column;
-  width: 654px;
-  max-width: 100%;
+  width: 100%;
+  position: relative;
   details > summary {
     list-style-type: none;
     width: 100%;
     font-weight: 500;
     font-size: 22px;
     line-height: 33px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     
   }
   details > summary::after {
@@ -145,6 +153,7 @@
     border-bottom: 1px solid #FFFFFF;
     cursor: pointer;
     padding: 27px 16px 25px;
+    width: 100%;
   }
 
 }

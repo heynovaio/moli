@@ -40,27 +40,13 @@ const CarouselSection = (props) => {
           )
         }
       }
-      image4: file(relativePath: {eq: "projects/project-4-1.JPG"}) {
+      image4: file(relativePath: {eq: "projects/project-4-1.jpg"}) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
             width: 740
             height: 391
           )
-        }
-      }
-      image5: file(relativePath: {eq: "projects/project-5-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image6: file(relativePath: {eq: "projects/project-6-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
     }
@@ -69,8 +55,6 @@ const CarouselSection = (props) => {
   const image2 = getImage(data.image2)
   const image3 = getImage(data.image3)
   const image4 = getImage(data.image4)
-  const image5 = getImage(data.image5)
-  const image6 = getImage(data.image6)
 
   return (
     <section className={carousel}>
@@ -98,7 +82,7 @@ const CarouselSection = (props) => {
             display: 'flex',
             overflow: 'auto',
             scrollSnapType: 'x mandatory',
-            gap:'40px'
+            gap:'30px'
           }}
         >
           <li className={CarouselItem}>
@@ -134,21 +118,6 @@ const CarouselSection = (props) => {
               type='commercial'
             />
           </li>
-          <li className={CarouselItem}>
-            <ProjectCard
-              image={image5}
-              number='05'
-              name='Country Club of the Hamptons'
-
-            />
-          </li>
-          <li className={CarouselItem}>
-            <ProjectCard
-              image={image6}
-              number='06'
-              name='Trail Community Center'
-            />
-          </li> 
         </ul>
         
       </div>
