@@ -20,7 +20,11 @@
   background: v.$color-lightblue;
   width: 80px;
   height: 80px;
+  z-index: 2;
+  cursor: pointer;
   position: absolute;
+  padding: 0;
+  border: none;
   bottom: 0;
   right: 0;
   display: flex;
@@ -29,6 +33,7 @@
   
   svg {
     color: white;
+    font-size: 38px;
   }
 }
 .Info {
@@ -50,4 +55,83 @@
   font-weight: 500;
   font-size: 40px;
 
+}
+.BioWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BioBack {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.33);
+  z-index: -1;
+}
+.Bio {
+  top: -20%;
+  max-width: calc(100% - 40px);
+  width: 1550px;
+  padding: 33px;
+  background: white;
+  position: relative;
+  color: v.$color-black;
+  svg {
+    color: v.$color-black;
+  }
+}
+.BioTop {
+  display:flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
+}
+.BioImages {
+  display: Grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 700px;
+  gap: 10px;
+  flex: 1;
+  > div {
+    grid-column: auto/span 1;
+  }
+  > div:first-child{
+    grid-column: auto/span 2;
+  }
+}
+.hamburger{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+
+  .bar{
+    position: absolute;
+    border: 2px solid black;
+    width: 100%;
+    height: 0;
+    left: 0;
+    top: 50%;
+    &:nth-of-type(1){
+      transform: rotate(45deg);
+    }
+    &:nth-of-type(2){
+      transform: rotate(-45deg);
+    }
+  }
+  
 }

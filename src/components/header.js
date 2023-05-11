@@ -5,9 +5,7 @@ import { Link } from "gatsby"
 
 const Header = ({ siteTitle }) => {
   const [open, setOpen] = React.useState(false)
-  React.useEffect(() => (
-    console.log('state change')
-  ),[open])
+
   return (
     <header className={sty.Header}>
       <div className="FlexWrap" style={{padding: '0 20px'}}>
