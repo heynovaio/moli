@@ -119,7 +119,7 @@ const ProjectsSection = (props) => {
             name='Ronmor Phase III Building Lift'
            
             expanded={{
-              bio: bio,
+              bio: 'This challenging project involved a last-minute change from a one-storey building to a two-storey building, after the structural steel and metal deck had already been completed. To accomplish this, the roof structure was cut into large sections, reinforced as required, then removed and set aside. A floor structure was built below, then the roof sections were craned back into place above.',
               additionalImages: [image9,image10]
             }}
           />
@@ -129,7 +129,7 @@ const ProjectsSection = (props) => {
             name='Stampede Roundup Center Expansion'
             
             expanded={{
-              bio: bio,
+              bio: 'Long known as an iconic component of the Calgary Stampede facilities, the original structural steel construction of the current BMO Centre was completed by Moli Industries in 1999. Our scope of work included:approximately $4 million in steelmain columns in the built up sections are approximately 16,000 lbs. eachmain trusses are over 65,000 lbs. each with 170' clear span, 30' deep, and over 1,000 bolts per trussExtensive suspended catwalk systems within the roof system',
               additionalImages: [image9,image10]
             }}
           />

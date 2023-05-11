@@ -24,6 +24,13 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 40px;
+  @media screen and (max-width: $tablet){
+    flex-direction: column;
+    > div {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .LineGraphic2 {
@@ -31,5 +38,15 @@ section {
   left: 40%;
   z-index: 0;
   top: 80%;
-  width: 600px
+  width: 600px;
+
+    @media screen and (max-width: 1000px){
+      display: none;
+    }
+}
+
+.textBox {
+  @media screen and (max-width: 1000px){
+    position:relative!important;
+  }
 }
