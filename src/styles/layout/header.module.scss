@@ -1,0 +1,77 @@
+@use '../abstracts/variables' as v;
+
+.Header {
+  height: v.$header-height;
+}
+
+.hamburger{
+  width: 59px;
+  height: 59px;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  .bar{
+    position: absolute;
+    border: 2px solid white;
+    width: 100%;
+    height: 0;
+    transition: all 0.33s linear;
+    left: 0;
+    top: 50%;
+    &:nth-of-type(1){
+      transform: translateY(10px);
+    }
+    &:nth-of-type(2){
+      transform: translateY(-10px);
+    }
+  }
+  
+}
+.menu {
+  display: flex;
+  visibility: hidden;
+  max-width: 100%;
+  width: 620px;
+  padding:  160px 56px 20px;
+  height: 100vh;
+  background: white;
+
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  position: fixed;
+  z-index: 2;
+  transition: all 0.33s ease-in-out;
+}
+.menuLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  position: relative;
+  z-index: 2;
+  & > a {
+    color: v.$color-black;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 28px;
+    z-index: 2;
+  }
+}
+.navOpen {
+  .bar {
+    border-color: black;
+    &:nth-of-type(1){
+      transform: rotate(45deg);
+    }
+    &:nth-of-type(2){
+      transform: rotate(-45deg);
+    }
+  }
+  .menu {
+    transform: translateX(0);
+    visibility: visible;
+  }
+}

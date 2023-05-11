@@ -1,15 +1,21 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import HeroSection from "../components/Homepage/HeroSection"
+import StatSection from "../components/Homepage/StatSection"
+import CarouselSection from "../components/Homepage/CarouselSection"
+import AccordionSection from "../components/Homepage/AccordionSection"
+import AboutSection from "../components/Homepage/AboutSection"
+import ValuesSection from "../components/Homepage/ValuesSection"
 
 const IndexPage = () => (
   <Layout>
-    <div className="Container">
-      <h1>Homepage</h1>
-    </div> 
+    <HeroSection/>
+    <StatSection/>
+    <CarouselSection/>
+    <AccordionSection/>
+    <AboutSection/>
+    <ValuesSection/>
   </Layout>
 )
 

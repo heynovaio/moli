@@ -1,0 +1,26 @@
+@use '../abstracts/variables' as v;
+
+.AboutSection {
+  background: url('../../images/about-hero.png');
+  background-size: cover;
+  padding-bottom: 0;
+}
+.AboutTitle{
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+  > h1 {
+    margin-bottom: 0;
+    line-height: 100%;
+  }
+}
+.PointGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  > div {
+    max-width: 320px;
+  }
+
+}

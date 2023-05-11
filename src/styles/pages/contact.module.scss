@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as v;
+
+
+.ContactListItem {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  svg {
+    color: v.$color-lightblue;
+  }
+}
+.Form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 100%;
+  width: 750px;
+  
+  label {
+    margin-bottom: 10px;
+  }
+  input[type='email'], input[type='text'], textarea{
+    background: #F2F2F2;
+    border-radius: 5px;
+    resize: none;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+}

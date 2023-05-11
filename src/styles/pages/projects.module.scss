@@ -1,0 +1,53 @@
+@use '../abstracts/variables' as v;
+
+.ProjectsGrid {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 60px;
+  column-gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.Card {
+  max-width: 720px;
+}
+.ImageWrap {
+  position: relative;
+  margin-bottom: 20px;
+}
+.Expand {
+  background: v.$color-lightblue;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  svg {
+    color: white;
+  }
+}
+.Info {
+  display: flex;
+  gap: 30px;
+  > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  > span {
+    font-weight: 500;
+    font-size: 80px;
+    line-height: 1;
+    display: block;
+  }
+}
+.Name {
+  font-weight: 500;
+  font-size: 40px;
+
+}

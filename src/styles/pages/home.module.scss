@@ -1,0 +1,131 @@
+@use '../abstracts/variables' as v;
+
+.HeroBackground {
+  position: absolute;
+  top: calc(v.$header-height * -1);
+  right: 0;
+  height: calc(100% + v.$header-height);
+  aspect-ratio: 1221/912;
+  background: url('../../images/above-the-fold.jpg'), rgba(98, 148, 197, 0.55);
+  background-size: cover;
+  mix-blend-mode: overlay;
+  z-index: -1;
+}
+
+.LineDivide {
+  display: block;
+  border-top: 1px solid #FFFFFF;
+  height: 0;
+  width: calc(100% - 40px);
+  margin: 80px auto;
+}
+.CarouselNav {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 60px;
+
+  a {
+    text-decoration: underline;
+    font-size: 22px;
+  }
+}
+.Index {
+  width: 75px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: -5px;
+  line-height: 1;
+  font-family: monospace;
+  margin-right: 5px;
+}
+.BtnNav {
+  border: 1px solid #FFFFFF;
+  width: 26px;
+  height: 26px;
+  color: white;
+  background: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.SlideControl {
+  display: flex;
+  align-items: center;
+}
+.CarouselItem {
+  flex-shrink: 0;
+  list-style-type: none;
+}
+.Stat {
+  max-width: 192px;
+  > span {
+    display: block;
+    background: linear-gradient(0deg, rgba(98, 148, 197, 0.5), rgba(98, 148, 197, 0.5)), radial-gradient(80.04% 80.04% at 0% -8.66%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(77.12deg, #576265 47.98%, #9EA1A1 50.92%, #848B8A 55.48%, #576265 56.87%, #576265 62.17%, #757A7B 64.09%, #576265 66.12%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    background-blend-mode: color, overlay, normal;
+  
+    font-family: 'Inter';
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 94%;
+  }
+  p {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+  }
+}
+.ValueGrid {
+  display: flex;
+  max-width: 762px;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  > div {
+    max-width: 320px;
+  }
+
+}
+.Accordion {
+  display: flex;
+  flex-direction: column;
+  width: 654px;
+  max-width: 100%;
+
+  details > summary {
+    list-style-type: none;
+    width: 100%;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    margin-bottom: 10px;
+    
+  }
+  details > summary::after {
+    content: '+';
+    font-size: 40px;
+    position: absolute;
+    right: 10px;
+  }
+
+  details[open] > summary::after {
+    content: '-';
+  }
+
+  details {
+    position: relative;
+    border-bottom: 1px solid #FFFFFF;
+    cursor: pointer;
+    padding: 32px 16px;
+  }
+
+}

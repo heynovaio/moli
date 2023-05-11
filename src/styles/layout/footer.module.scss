@@ -1,0 +1,19 @@
+.menuLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  gap: 20px;
+  max-width: 100%;
+  width: 620px;
+  margin: 0 auto;
+
+  & > a {
+    flex: 1 0 56px;
+  }
+}
+.copyright {
+  text-align: center;
+  margin: 40px auto 20px;
+}

@@ -1,0 +1,48 @@
+@import '../abstracts/variables';
+
+
+.Btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 18px;
+  text-align: center;
+  justify-content: center;
+  border: none;
+
+  width: max-content;
+}
+
+.ButtonText {
+  @extend .Btn;
+  background: linear-gradient(0deg, #111113, #111113), radial-gradient(66.65% 163.54% at -4.53% -9.61%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, #111113;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  background-blend-mode: color, overlay, normal;
+}
+
+.BtnOutlined {
+  @extend .Btn;
+  border: 1px solid $color-link;
+  color: $color-link;
+}
+
+.BtnContained {
+  @extend .Btn;
+  background: linear-gradient(0deg, rgba(98, 148, 197, 0.9), rgba(98, 148, 197, 0.9)), radial-gradient(66.65% 163.54% at -4.53% -9.61%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(81.08deg, rgba(87, 98, 101, 0.69) 3.01%, rgba(158, 161, 161, 0.69) 20.86%, rgba(132, 139, 138, 0.69) 42.94%, rgba(87, 98, 101, 0.69) 47.4%, rgba(87, 98, 101, 0.69) 76.39%, rgba(117, 122, 123, 0.69) 84.41%, rgba(87, 98, 101, 0.69) 95.63%), #FFFFFF;
+  background-blend-mode: color, overlay, normal, normal;
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  box-shadow: 7px 8px 24px rgba(100, 165, 230, 0.27), inset 0px 3px 1.5px rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  
+  color: $color-black;
+}
+
+.BtnCircular {
+  @extend .Btn;
+  padding: 10px 10px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: $color-lightblue;
+}

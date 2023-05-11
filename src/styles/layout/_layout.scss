@@ -1,0 +1,27 @@
+#gatsby-focus-wrapper {
+  display:flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+main {
+  flex: 1;
+}
+section {
+  padding: 80px 0;
+}
+.textBox {
+  display: flex;
+  flex-direction: column;
+  
+}
+.Container {
+  max-width: $full-width;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.FlexWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
