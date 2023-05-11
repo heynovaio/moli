@@ -7,10 +7,13 @@
   column-gap: 40px;
   flex-wrap: wrap;
   margin-top: 40px;
+  max-width: 100%;
 }
 
 .Card {
-  max-width: 720px;
+  width: 720px;
+  max-width: 100%;
+  position: relative;
 }
 .ImageWrap {
   position: relative;
@@ -58,15 +61,18 @@
 }
 .BioWrap {
   position: fixed;
-  top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
-  
+  right: 0;
+  top: 0;
+  height: 100%;
+
   z-index: 5;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
+
+  
+
 }
 .BioBack {
   position: absolute;
@@ -75,21 +81,27 @@
   right: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
   background: rgba(0, 0, 0, 0.33);
   z-index: -1;
 }
 .Bio {
-  top: -20%;
-  max-width: calc(100% - 40px);
+  max-width: 100%;
   width: 1550px;
-  padding: 33px;
-  background: white;
+  
+  height: 100%;
+  top: 40px;
+  
   position: relative;
+  overflow-y: scroll;
   color: v.$color-black;
   svg {
     color: v.$color-black;
   }
+}
+.BioInner {
+  background: white;
+  height: max-content;
+  padding: 33px;
 }
 .BioTop {
   display:flex;
@@ -101,9 +113,10 @@
   grid-template-columns: 1fr 1fr;
   max-width: 700px;
   gap: 10px;
-  flex: 1;
+  flex: 1 1 450px;
   > div {
     grid-column: auto/span 1;
+    
   }
   > div:first-child{
     grid-column: auto/span 2;
