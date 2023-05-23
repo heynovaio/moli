@@ -30,7 +30,7 @@ export const ProjectImages = () => {
         )
       }
     }
-    image2_1: file(relativePath: {eq: "projects/project-2-1.JPG"}) {
+    image2_1: file(relativePath: {eq: "projects/project-2-1.jpg"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH
@@ -183,7 +183,7 @@ export const ProjectImages = () => {
         )
       }
     }
-    image7_1: file(relativePath: {eq: "projects/project-7-1.webp"}) {
+    image7_1: file(relativePath: {eq: "projects/project-7-1.jpg"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH
@@ -201,7 +201,7 @@ export const ProjectImages = () => {
         )
       }
     }
-    image7_3: file(relativePath: {eq: "projects/project-7-3.webp"}) {
+    image7_3: file(relativePath: {eq: "projects/project-7-3.jpg"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH
@@ -210,7 +210,7 @@ export const ProjectImages = () => {
         )
       }
     }
-    image7_4: file(relativePath: {eq: "projects/project-7-4.jpg"}) {
+    image7_4: file(relativePath: {eq: "projects/project-7-4.JPG"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH

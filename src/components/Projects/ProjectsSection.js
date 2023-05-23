@@ -64,13 +64,11 @@ const ProjectsSection = (props) => {
           <ProjectCard
             image={image3_1}
             number='03'
-            name='Chateau Lake Louise Conference Center Name'
+            name='Chateau Lake Louise Conference Center'
            
             expanded={{
-              bio: `<div><div>Located in the Mount Temple Wing
-              of the Fairmont Chateau Lake Louise Hotel, this premiere conference center
-              serves as the meeting point for a wide variety of organizations and
-              corporations.</div></div><div>The structural steel for this work was a challenge, as the limitations in the access road size would not allow a large enough crane to be mobilized for the steel installation. Instead, a smaller crane was brought in to bring the steel in to one end of the building, and an innovative hand-cranking system was used to slowly move the steel into place.</div>`,
+              bio: `<div><p>Located in the Mount Temple Wing of the Fairmont Chateau Lake Louise Hotel, this premiere conference center serves as the meeting point for a wide variety of organizations and corporations.</p>
+              <p>The structural steel for this work was a challenge, due to access limitations to allow a large enough crane to be mobilized for the steel installation. Instead, a smaller crane was brought in to bring the steel in to one end of the building, and an innovative hand-cranking system was used to slowly move the steel into place.<p></div>`,
               additionalImages: [image3_2,image3_3]
             }}
           />
@@ -79,7 +77,10 @@ const ProjectsSection = (props) => {
             number='04'
             name='Northern Telecom Wireless Facility'
             expanded={{
-              bio: `<div>Our work on this project was completed for Nortel Networks in 1995. In 2009 it became the Calgary Police Service Headquarters.</div><div>As this was during the peak business period for Nortel, the project was extremely demanding on results, in particular the schedule. This resulted in our crews working over 30' in the air in -30 degree weather to meet the client requirements. For our ability to meet their extreme demands without sacrificing quality, Moli received multiple awards for this work, including the&nbsp; Steve Phelps Mission Impossible Award from the Royal Architectural Order of Westwinds.</div><div>Our scope of work:</div><div><ul><li>Over 300,00 square feet, comprised&nbsp;<div>of a two story`,
+              bio: `<div><p>Our work on this project was completed for Nortel Networks in 1995. In 2009 it became the Calgary Police Service Headquarters.</p><p>As this was during the peak business period for Nortel, the project was extremely demanding on results, in particular the schedule. This resulted in our crews working over 30' in the air in -30 degree weather to meet the client requirements. For our ability to meet their extreme demands without sacrificing quality, Moli received multiple awards for this work, including the&nbsp; Steve Phelps Mission Impossible Award from the Royal Architectural Order of Westwinds.</p>
+              <p>Our scope of work:</p><ul><li>Over 300,00 square feet, comprised of a two story
+              office space with an attached warehouse</li></ul>
+              <p>Additional Electro-Magnetic Chamber, 44' x 60' structure, 44' high constructed in 1997</p>`,
               additionalImages: [image4_2,image4_3]
             }}
           />
