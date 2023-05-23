@@ -20,11 +20,11 @@ const ValuesSection = (props) => {
               </div>
               <div>
                 <h3 className="Subtitle-2">Performance</h3>
-                <p>Our fabrication shop uses exceptional automation equipment & staff to provide timely fabrication, while ensuring superior quality results.</p>
+                <p>Our fabrication shop uses state of the art Daito Seiki automated equipment. The equipment is recognized for their unsurpassed accuracy and speed.</p>
               </div>
               <div>
                 <h3 className="Subtitle-2">Safety</h3>
-                <p>Our preventative approach to safety requires the commitment from management, employees, contractors, vendors and customers to avoid serious incidents. </p>
+                <p>We recognize that our employees are our most valued resources, as such we have established a sound safety program aimed at employee education and accident prevention. Our objective is to consistently exceed the legislative safety requirements, we attribute this achievement to over 28 years of membership and active participation with the Manufacturer’s Health & Safety Association, appointing external safety consultants to provide their valuable input and implementing our employee’s suggestions for improvement. </p>
               </div>
               <div>
                 <h3 className="Subtitle-2">Reliability</h3>

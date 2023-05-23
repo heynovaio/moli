@@ -1,5 +1,5 @@
 import * as React from "react"
-import { LineDivide, Stat, LineGraphic1 } from '../../styles/pages/home.module.scss'
+import { LineDivide, Stat, LineGraphic1} from '../../styles/pages/home.module.scss'
 import TextBox from "../textbox"
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -21,24 +21,25 @@ const StatSection = (props) => {
           </TextBox>
         </div>
         <span className={LineDivide}/>
-        <div className="FlexWrap">
+        <div className="FlexWrap" style={{alignItems: 'flex-start'}}>
           <div className={Stat}>
             <span>39</span>
             <p>Years in Business</p>
           </div>  
 
           <div className={Stat}>
-            <span>28</span>
-            <p>Years MHSA Membership</p>
-          </div>
-
-          <div className={Stat}>
             <span>88K</span>
             <p>Sq. ft. Shop Space</p>
           </div>
+
+          <div className={Stat}>
+            <span>13</span>
+            <p>Years ISO 9001 quality management system</p>
+          </div>
+
           <div className={Stat}>
             <span>95%+</span>
-            <p>COR audit scores</p>
+            <p>COR safety audit scores</p>
           </div>
         </div>
       </div>

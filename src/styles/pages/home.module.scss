@@ -76,6 +76,7 @@
     width: 100%;
   }
 }
+
 .Stat {
   max-width: 220px;
   @media screen and (max-width: 400px){
@@ -156,6 +157,20 @@
     width: 100%;
   }
 
+  details > div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    padding-top: 20px
+  }
+}
+
+.DetailsContent {
+  width: 60%;
+}
+
+.DetailsImage {
+  width: 40%
 }
 
 .LineGraphic1 {
