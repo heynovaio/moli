@@ -72,7 +72,8 @@ const ProjectCard = (props) => {
                 <div className={sty.BioImages}>
                   <GatsbyImage image={image} style={wide}/>
                   {expanded?.additionalImages?.map((img,index) => (
-                    <GatsbyImage image={img} key={index} style={index % 3 === 2 ? wide  : tall}/>
+                    // <GatsbyImage image={img} key={index} style={index % 3 === 2 ? tall : wide}/>
+                    <GatsbyImage image={img} key={index} style={wide}/>
                   ))}
                 </div>
               </div>

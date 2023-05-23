@@ -6,14 +6,14 @@ import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 const AboutSection = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: {eq: "about-1.JPG"}) {
+      image1: file(relativePath: {eq: "about_1.JPG"}) {
         childImageSharp {
           gatsbyImageData (
             width: 800
           )
         }
       }
-      image2: file(relativePath: {eq: "about-2.JPG"}) {
+      image2: file(relativePath: {eq: "about_2.JPG"}) {
         childImageSharp {
           gatsbyImageData (
             width: 800
