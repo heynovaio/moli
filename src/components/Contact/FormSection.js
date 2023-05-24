@@ -1,7 +1,7 @@
 import * as React from "react"
 import TextBox from "../textbox"
 import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import { navigate } from 'gatsby-link'
 import { Form } from "../../styles/pages/contact.module.scss"
 
@@ -82,6 +82,11 @@ const FormSection = (props) => {
           </TextBox>
           
         </div>
+      </div>
+      <div className="LineGraphic4">
+        <StaticImage
+          src="../../images/graphic-2.svg"
+        />
       </div>
     </section>
   )

@@ -45,6 +45,31 @@ section {
     }
 }
 
+.LineGraphic3 {
+  position: absolute;
+  left: auto;
+  right: 0;
+  z-index: -1;
+  top: -2%;
+
+    @media screen and (max-width: 1000px){
+      display: none;
+    }
+}
+
+.LineGraphic4 {
+  position: absolute;
+  left: -40px;
+  z-index: -1;
+  top: 45%;
+  width: 700px;
+  transform: scaleX(-1);
+
+    @media screen and (max-width: 1000px){
+      display: none;
+    }
+}
+
 .textBox {
   @media screen and (max-width: 1000px){
     position:relative!important;

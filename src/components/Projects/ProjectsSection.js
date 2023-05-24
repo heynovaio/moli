@@ -1,6 +1,5 @@
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import {  getImage } from "gatsby-plugin-image"
+import {  getImage, StaticImage } from "gatsby-plugin-image"
 import { ProjectsGrid } from '../../styles/pages/projects.module.scss'
 
 import ProjectCard from "../projectCard"
@@ -38,6 +37,11 @@ const ProjectsSection = (props) => {
 
   return (
     <section>
+      <div className="LineGraphic3">
+        <StaticImage
+          src="../../images/graphic-3.svg"
+        />
+      </div>
       <div className="Container">
         <h1>Featured Projects</h1>
         <div className={ProjectsGrid}>
