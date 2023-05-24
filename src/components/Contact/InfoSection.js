@@ -4,6 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {FaPhone, FaMapMarkerAlt} from 'react-icons/fa'
 import { ContactListItem } from "../../styles/pages/contact.module.scss"
+import Map from "../Contact/Map"
 
 const InfoSection = (props) => {
   const data = useStaticQuery(graphql`
@@ -34,7 +35,7 @@ const InfoSection = (props) => {
               <p className="BodyText">1880 Centre Avenue N.E., Calgary Alberta T2E 0A6</p>
             </div>
           </TextBox>
-          <GatsbyImage image={image}/>
+          <Map />
         </div>
       </div>
     </section>
