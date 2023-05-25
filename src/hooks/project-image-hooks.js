@@ -30,7 +30,7 @@ export const ProjectImages = () => {
         )
       }
     }
-    image2_1: file(relativePath: {eq: "projects/project-2-1.jpg"}) {
+    image2_1: file(relativePath: {eq: "projects/project-2-1.JPG"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH
