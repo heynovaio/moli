@@ -1,22 +1,10 @@
 import * as React from "react"
 import TextBox from "../textbox"
-import { useStaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import {FaPhone, FaMapMarkerAlt} from 'react-icons/fa'
 import { ContactListItem } from "../../styles/pages/contact.module.scss"
 import Map from "../Contact/Map"
 
 const InfoSection = (props) => {
-  const data = useStaticQuery(graphql`
-    query {
-      file(relativePath: {eq: "map.png"}) {
-        childImageSharp {
-          gatsbyImageData
-        }
-      }
-    }
-  `)
-  const image = getImage(data.file)
   return (
     <section>
       <div className="Container">

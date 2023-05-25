@@ -84,6 +84,7 @@ const CarouselSection = (props) => {
             scrollSnapType: 'x mandatory',
             gap:'30px'
           }}
+          tabindex="0"
         >
           <li className={CarouselItem}>
             <ProjectCard

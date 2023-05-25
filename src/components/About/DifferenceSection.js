@@ -19,7 +19,7 @@ const DifferenceSection = (props) => {
     <section>
       <div className="Container">
         <div className="FlexWrap">
-          <GatsbyImage image={image}/>
+          <GatsbyImage image={image} alt="Workers working on a building project." />
           <TextBox width={752}>
             <h2>Shared Values</h2>
             <div className={PointGrid}>

@@ -16,8 +16,7 @@ const Footer = () => {
         </Link>
         <Link to='/'>
           <StaticImage
-            src="../images/moli-logo-light.svg"
-            
+            src="../images/moli-logo-light.svg" 
             alt='Moli Logo'
           />
         </Link>

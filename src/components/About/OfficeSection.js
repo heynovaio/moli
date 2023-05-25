@@ -40,10 +40,10 @@ const OfficeSection = (props) => {
           </TextBox>
           <div style={{display: 'flex', flexDirection: 'column', gap: 20}}>
             <GatsbyImage
-              image={image1}
+              image={image1} alt="Building schematics"
             />
             <GatsbyImage
-              image={image2}
+              image={image2} alt="A construction model"
             />
           </div>
         </div>

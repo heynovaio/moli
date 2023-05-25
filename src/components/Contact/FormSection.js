@@ -46,7 +46,7 @@ const FormSection = (props) => {
     <section>
       <div className="Container">
         <div className="FlexWrap">
-          <GatsbyImage image={image}/>
+          <GatsbyImage image={image} alt="Welders working on steel projects inside a warehouse."/>
           <TextBox width={750}>
             <h2>Connect with us</h2>
             {/* <p className="BodyText">

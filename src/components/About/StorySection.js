@@ -22,7 +22,7 @@ const StorySection = (props) => {
             <h2>OUR STORY</h2>
             <p className="BodyText">Moli Industries has firmly established itself as a reliable source for structural steel projects from design to assembly since it began operating in Calgary in 1984.&nbsp; A dynamic and ambitious group&nbsp;committed&nbsp;to open communication with clients and vendors, dedicated to it's quality management system to exceed the client expectations, and diligent to ensure the safety of employees, customers and vendors on our worksites.</p>
           </TextBox>
-          <GatsbyImage image={image}/>
+          <GatsbyImage image={image} alt="Employees smiling as they pose on a steel project in hardhats."/>
         </div>
       </div>
     </section>

@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => {
             alt='Moli Logo'
           />
         </Link>
-        <nav className={open ? sty.navOpen : ''} aria-expanded={open ? 'true' : 'false'}>
+        <nav className={open ? sty.navOpen : ''}>
           <button className={sty.hamburger} onClick={() => setOpen(!open)} tabIndex={0} aria-label='Open website menu'>
             <span className={sty.bar} ariaHidden='true'/>
             <span className={sty.bar} ariaHidden='true'/>
