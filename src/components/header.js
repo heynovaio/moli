@@ -16,11 +16,10 @@ const Header = ({ siteTitle }) => {
             alt='Moli Logo'
           />
         </Link>
-        <nav className={open ? sty.navOpen : ''}>
-
-          <button className={sty.hamburger} onClick={() => setOpen(!open)} tabIndex={0}>
-            <span className={sty.bar}/>
-            <span className={sty.bar}/>
+        <nav className={open ? sty.navOpen : ''} ariaExpanded={open ? 'true' : 'false'}>
+          <button className={sty.hamburger} onClick={() => setOpen(!open)} tabIndex={0} ariaLabel='Open website menu'>
+            <span className={sty.bar} ariaHidden='true'/>
+            <span className={sty.bar} ariaHidden='true'/>
           </button>
           <div className={sty.menu}>
             <div className={sty.menuLinks}>
