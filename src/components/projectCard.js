@@ -40,7 +40,7 @@ const ProjectCard = (props) => {
         <div className={sty.ImageWrap}>
           <GatsbyImage image={image} style={{aspectRatio:'740/390'}}/>
           {expanded && 
-            <button className={sty.Expand} onClick={() => setExpandState(!expandState)}>
+            <button className={sty.Expand} onClick={() => setExpandState(!expandState)} aria-label='Expand Project Info'>
               <FaExpandAlt/>
             </button>
           }
@@ -59,7 +59,7 @@ const ProjectCard = (props) => {
           <div className={sty.Bio} >
             <div className={sty.BioInner}>
               <div className={sty.BioTop}>
-                <button className={sty.hamburger} onClick={() => setExpandState(!expandState)} tabIndex={0} aria-label='Expand project content'>
+                <button className={sty.hamburger} onClick={() => setExpandState(!expandState)} tabIndex={0} aria-label='Close Content'>
                   <span className={sty.bar} ariaHidden='true'/>
                   <span className={sty.bar} ariaHidden='true'/>
                 </button>
