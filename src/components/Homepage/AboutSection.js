@@ -1,7 +1,7 @@
 import * as React from "react"
 import TextBox from "../textbox"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
+import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const AboutSection = (props) => {
   const data = useStaticQuery(graphql`
@@ -35,12 +35,6 @@ const AboutSection = (props) => {
             <Link to="/about" className="BtnContained">
               Learn More
             </Link>
-
-            <div className="LineGraphic2">
-              <StaticImage
-                src="../../images/graphic-2.svg"
-              />
-            </div>
             
           </TextBox>
           <div style={{display: 'flex', flexDirection: 'column', gap: 20}}>
