@@ -1,7 +1,7 @@
 import * as React from "react"
 import TextBox from "../textbox"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import { useStaticQuery, graphql } from "gatsby"
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
 import { CreditsList } from '../../styles/pages/about.module.scss'
 
 const OfficeSection = (props) => {
@@ -29,6 +29,11 @@ const OfficeSection = (props) => {
     <section>
       <div className="Container">
         <div className="FlexWrap" style={{alignItems: 'flex-start'}}>
+          <div className="LineGraphic2" style={{top: '50%'}}>
+              <StaticImage
+                src="../../images/graphic-4.svg"
+              />
+          </div>
           <TextBox width={520} sticky>
             <h2>Affiliations</h2>
             <ul className={CreditsList}>
