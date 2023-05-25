@@ -124,54 +124,6 @@
   }
 
 }
-.Accordion {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  details > summary {
-    list-style-type: none;
-    width: 100%;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 33px;
-    padding-bottom: 10px;
-    
-  }
-  details > summary::after {
-    content: '+';
-    font-size: 40px;
-    position: absolute;
-    right: 10px;
-  }
-
-  details[open] > summary::after {
-    content: '-';
-  }
-
-  details {
-    position: relative;
-    border-bottom: 1px solid #FFFFFF;
-    cursor: pointer;
-    padding: 27px 16px 25px;
-    width: 100%;
-  }
-
-  details > div {
-    display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    padding-top: 20px
-  }
-}
-
-.DetailsContent {
-  width: 60%;
-}
-
-.DetailsImage {
-  width: 40%
-}
 
 .LineGraphic1 {
   position: absolute;
