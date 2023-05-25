@@ -59,9 +59,9 @@ const ProjectCard = (props) => {
           <div className={sty.Bio} >
             <div className={sty.BioInner}>
               <div className={sty.BioTop}>
-                <button className={sty.hamburger} onClick={() => setExpandState(!expandState)} tabIndex={0}>
-                  <span className={sty.bar}/>
-                  <span className={sty.bar}/>
+                <button className={sty.hamburger} onClick={() => setExpandState(!expandState)} tabIndex={0} aria-label='Expand project content'>
+                  <span className={sty.bar} ariaHidden='true'/>
+                  <span className={sty.bar} ariaHidden='true'/>
                 </button>
               </div>
               <div className="FlexWrap" style={{alignItems: 'stretch', gap: 30, justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
