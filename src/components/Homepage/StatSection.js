@@ -32,9 +32,9 @@ const StatSection = (props) => {
             <p>Sq. ft. Shop Space</p>
           </div>
 
-          <div className={Stat}>
-            <span>13</span>
-            <p>Years ISO 9001 quality management system</p>
+          <div className={Stat} style={{maxWidth: '350px'}}>
+            <span>13YRS</span>
+            <p>ISO 9001 quality management system</p>
           </div>
 
           <div className={Stat}>
