@@ -86,6 +86,7 @@ const FormSection = (props) => {
       <div className="LineGraphic4">
         <StaticImage
           src="../../images/graphic-2.svg"
+          alt=""
         />
       </div>
     </section>

@@ -8,7 +8,7 @@ import { SlideControl, CarouselNav, carousel, CarouselItem,  Index, BtnNav, Work
 import TextBox from "../textbox"
 
 const CarouselSection = (props) => {
-  const { scrollRef, pages, activePageIndex, next, prev, goTo } =
+  const { scrollRef, pages, activePageIndex, next, prev } =
   useSnapCarousel();
 
   const data = useStaticQuery(graphql`
@@ -84,7 +84,7 @@ const CarouselSection = (props) => {
             scrollSnapType: 'x mandatory',
             gap:'30px'
           }}
-          tabindex="0"
+          tabIndex="0"
         >
           <li className={CarouselItem}>
             <ProjectCard

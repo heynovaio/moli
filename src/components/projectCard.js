@@ -9,15 +9,13 @@ const ProjectCard = (props) => {
     image,
     number,
     name,
-    description,
-    type,
     expanded, 
   } = props
   const [expandState, setExpandState] = React.useState(false)
 
-  function replaceWithBr() {
-    return expanded?.bio.replace(/\n/g, "<br />")
-  }
+  // function replaceWithBr() {
+  //   return expanded?.bio.replace(/\n/g, "<br />")
+  // }
   function findHeight(){
     if (typeof document !== `undefined`) {
       return document?.body.offsetHeight
@@ -30,15 +28,15 @@ const ProjectCard = (props) => {
     aspectRatio: '700/426'
     
   }
-  const tall = {
-    aspectRatio: '342/408'
-  }
+  // const tall = {
+  //   aspectRatio: '342/408'
+  // }
   return (
     <>
     
       <div className={sty.Card}>
         <div className={sty.ImageWrap}>
-          <GatsbyImage image={image} style={{aspectRatio:'740/390'}}/>
+          <GatsbyImage image={image} style={{aspectRatio:'740/390'}} alt=""/>
           {expanded && 
             <button className={sty.Expand} onClick={() => setExpandState(!expandState)} aria-label='Expand Project Info'>
               <FaExpandAlt/>
@@ -60,8 +58,8 @@ const ProjectCard = (props) => {
             <div className={sty.BioInner}>
               <div className={sty.BioTop}>
                 <button className={sty.hamburger} onClick={() => setExpandState(!expandState)} tabIndex={0} aria-label='Close Content'>
-                  <span className={sty.bar} ariaHidden='true'/>
-                  <span className={sty.bar} ariaHidden='true'/>
+                  <span className={sty.bar} aria-hidden='true'/>
+                  <span className={sty.bar} aria-hidden='true'/>
                 </button>
               </div>
               <div className="FlexWrap" style={{alignItems: 'stretch', gap: 30, justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
@@ -79,7 +77,7 @@ const ProjectCard = (props) => {
               </div>
             </div>     
           </div>
-          <div className={sty.BioBack} onClick={() => setExpandState(!expandState)} tabIndex={0} style={{height: findHeight()}}/>
+          <div className={sty.BioBack} onClick={() => setExpandState(!expandState)} tabIndex={0} style={{height: findHeight()}} role="button" aria-label="Close content"/>
         </div>
       }
       

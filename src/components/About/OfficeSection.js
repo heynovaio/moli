@@ -32,6 +32,7 @@ const OfficeSection = (props) => {
           <div className="LineGraphic2" style={{top: '50%'}}>
               <StaticImage
                 src="../../images/graphic-4.svg"
+                alt=""
               />
           </div>
           <TextBox width={520} sticky>

@@ -12,14 +12,14 @@ const Header = ({ siteTitle }) => {
         <Link to='/' className={sty.logo}>
           <StaticImage
             src="../images/moli-logo-light@2x.svg"
-            width="180"
+            width={180}
             alt='Moli Logo'
           />
         </Link>
         <nav className={open ? sty.navOpen : ''}>
           <button className={sty.hamburger} onClick={() => setOpen(!open)} tabIndex={0} aria-label='Open website menu'>
-            <span className={sty.bar} ariaHidden='true'/>
-            <span className={sty.bar} ariaHidden='true'/>
+            <span className={sty.bar} aria-hidden='true'/>
+            <span className={sty.bar} aria-hidden='true'/>
           </button>
           <div className={sty.menu}>
             <div className={sty.menuLinks}>

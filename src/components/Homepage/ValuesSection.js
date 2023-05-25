@@ -16,6 +16,7 @@ const ValuesSection = (props) => {
           <div className="LineGraphic2">
               <StaticImage
                 src="../../images/graphic-4.svg"
+                alt=""
               />
           </div>
           <div>

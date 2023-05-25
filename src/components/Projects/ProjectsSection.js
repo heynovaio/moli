@@ -16,7 +16,7 @@ const ProjectsSection = (props) => {
   const image3_1 = getImage(data.image3_1)
   const image3_2 = getImage(data.image3_2)
   const image3_3 = getImage(data.image3_3)
-  const image3_4 = getImage(data.image3_4)
+  // const image3_4 = getImage(data.image3_4)
   const image4_1 = getImage(data.image4_1)
   const image4_2 = getImage(data.image4_2)
   const image4_3 = getImage(data.image4_3)
@@ -40,6 +40,7 @@ const ProjectsSection = (props) => {
       <div className="LineGraphic3">
         <StaticImage
           src="../../images/graphic-3.svg"
+          alt=""
         />
       </div>
       <div className="Container">

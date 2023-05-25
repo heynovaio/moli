@@ -46,6 +46,7 @@ const StatSection = (props) => {
       <div className={LineGraphic1}>
         <StaticImage
           src="../../images/graphic-1.svg"
+          alt=""
         />
       </div>
     </section>
