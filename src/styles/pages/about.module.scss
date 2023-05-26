@@ -44,4 +44,15 @@
     font-weight: bold;
     letter-spacing: 0.02em;
   }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background:rgba(v.$color-navyblue, 0.85);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+  }
 }
