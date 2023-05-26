@@ -8,12 +8,20 @@
   flex-wrap: wrap;
   margin-top: 40px;
   max-width: 100%;
+
+  @media screen and (max-width: v.$tablet){
+    justify-content: center;
+  }
 }
 
 .Card {
   width: 700px;
-  max-width: 100%;
+  max-width: 46vw;
   position: relative;
+
+  @media screen and (max-width: v.$tablet){
+    max-width: 100%;
+  }
 }
 .ImageWrap {
   position: relative;
