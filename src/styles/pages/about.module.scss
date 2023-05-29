@@ -14,6 +14,10 @@
   > div {
     width: 100%;
   }
+
+  @media screen and (max-width: v.$tablet){
+    height: 30vh;
+  }
 }
 .AboutTitle{
   display: block;

@@ -11,6 +11,7 @@
 
   .AccordionImage {
     flex: 1;
+    text-align: center;
   }
 
   details > summary {
@@ -48,40 +49,3 @@
   width: 100%;
   flex-direction: column;
 }
-
-// .DetailsContent {
-//   width: 60%;
-// }
-
-// .DetailsImage {
-//   position: absolute;
-//   left: 20px;
-//   top: 60px;
-//   opacity: 0;
-//   max-width: 46vw;
-//   height: 540px;
-//   transition: opacity 500ms ease;
-//   background-color: #262A36;
-//   margin-right: 2%;
-
-//   &_default {
-//     opacity: 100%;
-//     position: relative;
-//     top: auto;
-//     left: auto;
-//     height: 500px;
-//     max-height: 500px;
-//     min-width: 49vw;
-//     max-width: 49vw;
-//   }
-
-//   @media screen and (max-width: v.$tablet){
-//     display: none;
-  
-//     &_default {
-//       min-width: 90vw;
-//       margin: 0;
-//       display: block;
-//     }
-//   }
-// }

@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
-// import { Accordion, DetailsImage, DetailsContent } from '../../styles/pages/home.module.scss'
 import * as sty from '../../styles/components/accordian.module.scss'
-import TextBox from "../textbox"
 
 
 const AccordionSection = () => {

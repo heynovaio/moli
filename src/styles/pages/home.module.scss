@@ -26,7 +26,12 @@
   height: 0;
   width: calc(100% - 40px);
   margin: 80px auto;
+
+  @media screen and (max-width: v.$tablet){
+    margin: 20px auto 40px auto;
+  }
 }
+
 .CarouselNav {
   margin-bottom: 40px;
   display: flex;
@@ -79,7 +84,7 @@
 
 .Stat {
   max-width: 320px;
-  @media screen and (max-width: 400px){
+  @media screen and (max-width: v.$tablet) {
     width: 100%;
   }
   > span {
