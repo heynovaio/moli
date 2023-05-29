@@ -1,20 +1,27 @@
 @use '../abstracts/variables' as v;
 
-.ContentBox {
-  max-width: 45vw; 
-  width: 100%;
+// .ContentBox {
+//   max-width: 45vw; 
+//   width: 100%;
 
-  @media screen and (max-width: v.$tablet){
-    max-width: 90vw;
-  }
-}
+  // @media screen and (max-width: v.$tablet){
+  //   max-width: 90vw;
+  // }
+// }
 
 .Accordion {
   display: flex;
-  flex-direction: column;
   width: 100%;
-  position: static;
-  
+  gap: 40px;
+
+  @media screen and (max-width: v.$tablet){
+    flex-direction: column;
+  }
+
+  .AccordionImage {
+    flex: 1;
+  }
+
   details > summary {
     list-style-type: none;
     width: 100%;
@@ -36,7 +43,6 @@
   }
 
   details {
-    position: static;
     border-bottom: 1px solid #FFFFFF;
     cursor: pointer;
     padding: 27px 16px 25px;
@@ -45,67 +51,46 @@
   }
 }
 
-.DetailsContent {
-  width: 60%;
+.AccordionInfo {
+  display: inline-flex;
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
 }
 
-.DetailsImage {
-  position: absolute;
-  left: 20px;
-  top: 60px;
-  opacity: 0;
-  max-width: 46vw;
-  height: 540px;
-  transition: opacity 500ms ease;
-  background-color: #262A36;
-  margin-right: 2%;
+// .DetailsContent {
+//   width: 60%;
+// }
 
-  &_default {
-    opacity: 100%;
-    position: relative;
-    top: auto;
-    left: auto;
-    height: 500px;
-    max-height: 500px;
-    min-width: 49vw;
-    max-width: 49vw;
-  }
+// .DetailsImage {
+//   position: absolute;
+//   left: 20px;
+//   top: 60px;
+//   opacity: 0;
+//   max-width: 46vw;
+//   height: 540px;
+//   transition: opacity 500ms ease;
+//   background-color: #262A36;
+//   margin-right: 2%;
 
-  @media screen and (max-width: v.$tablet){
-    display: none;
+//   &_default {
+//     opacity: 100%;
+//     position: relative;
+//     top: auto;
+//     left: auto;
+//     height: 500px;
+//     max-height: 500px;
+//     min-width: 49vw;
+//     max-width: 49vw;
+//   }
+
+//   @media screen and (max-width: v.$tablet){
+//     display: none;
   
-    &_default {
-      min-width: 90vw;
-      margin: 0;
-      display: block;
-    }
-  }
-}
-
-details.Details1[open] {
-  .DetailsImage_1 {
-    opacity: 100%;
-    transition: opacity 500ms ease;
-  }
-}
-
-details.Details2[open] {
-  .DetailsImage_2 {
-    opacity: 100%;
-    transition: opacity 500ms ease;
-  }
-}
-
-details.Details3[open] {
-  .DetailsImage_3 {
-    opacity: 100%;
-    transition:opacity 500ms ease;
-  }
-}
-
-details.Details4[open] {
-  .DetailsImage_4 {
-    opacity: 100%;
-    transition: opacity 500ms ease;
-  }
-}
+//     &_default {
+//       min-width: 90vw;
+//       margin: 0;
+//       display: block;
+//     }
+//   }
+// }
