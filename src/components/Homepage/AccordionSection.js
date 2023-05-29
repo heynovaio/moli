@@ -74,24 +74,13 @@ const AccordionSection = () => {
   ];
 
   const renderedItems = items.map((item, index) => {
-    const active = index === activeIndex ? "active" : "";
-
     return (
-      <>
-      <details>
-        <summary onClick={() => onTitleClick(index)}>{item.title}</summary>
-        {item.content}
-      </details>
-      </>
-      // <div key={item.title}>
-      //   <div className={`title ${active}`} onClick={() => onTitleClick(index)}>
-      //     <i className="dropdown icon"></i>
-      //     {item.title}
-      //   </div>
-      //   <div className={`content ${active}`}>
-      //     <p>{item.content}</p>
-      //   </div>
-      // </div>
+      <div key={index}>
+        <details>
+          <summary onClick={() => onTitleClick(index)}>{item.title}</summary>
+          {item.content}
+        </details>
+      </div>
     );
   });
 
