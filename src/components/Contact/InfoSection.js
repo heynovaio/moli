@@ -11,7 +11,9 @@ const InfoSection = (props) => {
         <div className="FlexWrap">
           <TextBox width={644}>
             <h1>Connect with us</h1>
-            <p className="BodyText">Fill out the form below to provide details about your project or inquiry. Interested in career opportunities with Moli? Please send cover letter and resume to careers@moli.ca
+            <p className="BodyText">
+              Fill out the form below to provide details about your project or inquiry.</p>
+              <p className="BodyText">Interested in career opportunities with Moli?<br/>Please send cover letter and resume to careers@moli.ca
 </p>
             <br/>
             <div className={ContactListItem}>

@@ -38,7 +38,7 @@ const OfficeSection = (props) => {
           <TextBox width={520} sticky>
             <h2>Affiliations</h2>
             <ul className={CreditsList}>
-              <li><span>Engineering Associations:</span> British Columbia (APEGBC), Alberta (APEGA), Saskatchewan (APEGS), Manitoba (APEGM) and Ontario (PEO)</li>
+              <li><span>Engineering Associations:</span> British Columbia (APEGBC), Alberta (APEGA), Saskatchewan (APEGS), and Ontario (PEO)</li>
               <li><span>Certifying Partners:</span> Manufacturers' Health and Safety Association (MHSA); COR Certified and Partnership in Injury Reduction (PIR)</li>
               <li><span>Accreditations:</span> Canadian Welding Bureau CSA Standard W47.1 and Quality Management System ISO 9001:2015 </li>
             </ul>  
