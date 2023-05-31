@@ -273,6 +273,78 @@ export const ProjectImages = () => {
         )
       }
     }
+    image9_1: file(relativePath: {eq: "projects/project-9-1.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image9_2: file(relativePath: {eq: "projects/project-9-2.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image9_3: file(relativePath: {eq: "projects/project-9-3.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image9_4: file(relativePath: {eq: "projects/project-9-4.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image10_1: file(relativePath: {eq: "projects/project-10-1.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image10_2: file(relativePath: {eq: "projects/project-10-2.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image10_3: file(relativePath: {eq: "projects/project-10-3.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image10_4: file(relativePath: {eq: "projects/project-10-4.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
   }
   `)
   return data;

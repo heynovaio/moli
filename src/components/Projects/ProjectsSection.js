@@ -36,6 +36,15 @@ const ProjectsSection = (props) => {
   const image8_2 = getImage(data.image8_2)
   const image8_3 = getImage(data.image8_3)
   const image8_4 = getImage(data.image8_4)
+  const image9_1 = getImage(data.image9_1)
+  const image9_2 = getImage(data.image9_2)
+  const image9_3 = getImage(data.image9_3)
+  const image9_4 = getImage(data.image9_4)
+  const image10_1 = getImage(data.image10_1)
+  const image10_2 = getImage(data.image10_2)
+  const image10_3 = getImage(data.image10_3)
+  const image10_4 = getImage(data.image10_4)
+
 
   return (
     <section>
@@ -126,6 +135,24 @@ const ProjectsSection = (props) => {
             expanded={{
               bio: `<div><div>The post-secondary institution underwent an expansion in 2001.</div><div>Our scope of work:</div><div><ul><li><div>Approximately $1.5 million in steel work</div></li><li>Long span trusses, about 120’ in length</li><li><div>Very heavy interior steel work for Heritage Building</div></li></ul></div></div>`,
               additionalImages: [image8_2,image8_3,image8_4]
+            }}
+          /> 
+           <ProjectCard
+            image={image9_1}
+            number='09'
+            name='Cochrane Automotive Storage'
+            expanded={{
+              bio: `<div></div>`,
+              additionalImages: [image9_2,image9_3,image9_4]
+            }}
+          /> 
+           <ProjectCard
+            image={image10_1}
+            number='10'
+            name='Calgary Airport Casino'
+            expanded={{
+              bio: `<div></div>`,
+              additionalImages: [image10_2,image10_3,image10_4]
             }}
           /> 
         </div>
