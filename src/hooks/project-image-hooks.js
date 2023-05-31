@@ -120,7 +120,7 @@ export const ProjectImages = () => {
         )
       }
     }
-    image5_1: file(relativePath: {eq: "projects/project-5-1.JPG"}) {
+    image5_1: file(relativePath: {eq: "projects/project-5-1.jpg"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH
@@ -139,6 +139,24 @@ export const ProjectImages = () => {
       }
     }
     image5_3: file(relativePath: {eq: "projects/project-5-3.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image5_4: file(relativePath: {eq: "projects/project-5-4.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image5_5: file(relativePath: {eq: "projects/project-5-5.jpg"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH

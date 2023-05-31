@@ -23,6 +23,8 @@ const ProjectsSection = (props) => {
   const image5_1 = getImage(data.image5_1)
   const image5_2 = getImage(data.image5_2)
   const image5_3 = getImage(data.image5_3)
+  const image5_4 = getImage(data.image5_4)
+  const image5_5 = getImage(data.image5_5)
   const image6_1 = getImage(data.image6_1)
   const image6_2 = getImage(data.image6_2)
   const image6_3 = getImage(data.image6_3)
@@ -96,7 +98,7 @@ const ProjectsSection = (props) => {
 
             expanded={{
               bio: `<div><div>The Country Club of the Hamptons is a remarkable private 18 hole golf course tucked in Calgary's NW community of the Hamptons.&nbsp;</div><div>This project was a work of pride for Moli, involving innovative design-build approaches to create 20' roof cantilevers all around the building, as well as a feature open-riser steel spiral staircase.&nbsp;</div></div>`,
-              additionalImages: [image5_2,image5_3]
+              additionalImages: [image5_3, image5_4, image5_5]
             }}
           />
           <ProjectCard

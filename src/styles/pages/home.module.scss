@@ -5,11 +5,17 @@
   top: calc(v.$header-height * -1);
   right: 0;
   height: calc(100% + v.$header-height);
-  aspect-ratio: 1221/912;
   background: url('../../images/above-the-fold.jpg');
   background-size: cover;
+  background-position: top center;
   mix-blend-mode: overlay;
+  width: 100%;
   z-index: -1;
+
+  @media screen and (min-width: v.$desktop){
+    aspect-ratio: 1221/912;
+    width: auto;
+  }
 }
 
 
