@@ -120,7 +120,7 @@ export const ProjectImages = () => {
         )
       }
     }
-    image5_1: file(relativePath: {eq: "projects/project-5-1.jpg"}) {
+    image5_1: file(relativePath: {eq: "projects/project-5-1.JPG"}) {
       childImageSharp {
         gatsbyImageData(
           layout: FULL_WIDTH
