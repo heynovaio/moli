@@ -84,7 +84,6 @@
   right: 0;
   top: 0;
   height: 100%;
-
   z-index: 20;
   display: flex;
   align-items: flex-start;
@@ -101,15 +100,15 @@
   background: rgba(0, 0, 0, 0.33);
   z-index: -1;
 }
+
 .Bio {
   max-width: 100%;
   width: 1550px;
-  
   height: 100%;
   top: 40px;
-  
   position: relative;
   overflow-y: scroll;
+  padding-bottom: 20px;
   color: v.$color-black;
   svg {
     color: v.$color-black;

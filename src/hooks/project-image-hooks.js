@@ -237,6 +237,24 @@ export const ProjectImages = () => {
         )
       }
     }
+    image7_5: file(relativePath: {eq: "projects/project-7-5.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image7_6: file(relativePath: {eq: "projects/project-7-6.webp"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
     image8_1: file(relativePath: {eq: "projects/project-8-1.jpg"}) {
       childImageSharp {
         gatsbyImageData(

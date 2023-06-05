@@ -33,6 +33,8 @@ const ProjectsSection = (props) => {
   const image7_2 = getImage(data.image7_2)
   const image7_3 = getImage(data.image7_3)
   const image7_4 = getImage(data.image7_4)
+  const image7_5 = getImage(data.image7_5)
+  const image7_6 = getImage(data.image7_6)
   const image8_1 = getImage(data.image8_1)
   const image8_2 = getImage(data.image8_2)
   const image8_3 = getImage(data.image8_3)
@@ -63,7 +65,7 @@ const ProjectsSection = (props) => {
             name='Custom work for private residence'
             expanded={{
               bio: `<div>Moli has worked on many residential structures over the years, from large multi-family projects to single-family detached homes.&nbsp;</div><div>The single-family homes are often the most interesting and challenging projects, as they require close coordination with trades to meet very strict requirements. There are all sorts of challenges that can be involved in these projects, from meeting extremely strict floor depth requirements to having floating artistic stairs without any intermediate structural supports.</div>`,
-              additionalImages: [image7_2,image7_3,image7_4]
+              additionalImages: [image7_2,image7_3,image7_4, image7_5, image7_6]
             }}
           />
            <ProjectCard
