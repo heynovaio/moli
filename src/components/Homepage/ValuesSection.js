@@ -1,6 +1,7 @@
 import * as React from "react"
 import TextBox from "../textbox"
 import { ValueGrid } from '../../styles/pages/home.module.scss'
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const ValuesSection = (props) => {
@@ -12,6 +13,9 @@ const ValuesSection = (props) => {
           <TextBox width={624}>
             <h2>Our Mission </h2>
             <p className="BodyText">is to provide exceptional steel design, fabrication, and erection services through ongoing innovation, skilled production, and a marked commitment to excellence.</p>
+            <Link to="/about" className="BtnContained">
+              Learn More
+            </Link>
           </TextBox>
           <div className="LineGraphic2">
               <StaticImage

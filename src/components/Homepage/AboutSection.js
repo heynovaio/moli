@@ -1,6 +1,6 @@
 import * as React from "react"
 import TextBox from "../textbox"
-import { useStaticQuery, graphql, Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 
 const AboutSection = (props) => {
@@ -31,10 +31,7 @@ const AboutSection = (props) => {
         <div className="FlexWrap" style={{alignItems: 'flex-start'}}>
           <TextBox width={520} sticky>
             <h2>Quality Assured</h2>
-            <p className="BodyText">Moli Industries has firmly established itself as a reliable source for structural steel projects from design to assembly since it began operating in Calgary in 1984.  A dynamic and ambitious group committed to open communication with clients and vendors, dedicated to it's quality management system to exceed the client expectations, and diligent to ensure the safety of employees, customers and vendors on our worksites.</p>
-            <Link to="/about" className="BtnContained">
-              Learn More
-            </Link>
+            <p className="BodyText">We are committed to quality in all aspects of the commercial steel industry. Going beyond current compliance laws and regulations, we seek continuous opportunities for improvement to provide safe, accurate, and timely project solutions.</p>
             
           </TextBox>
           <div style={{display: 'flex', flexDirection: 'column', gap: 20}}>
