@@ -8,7 +8,7 @@ import { Form } from "../../styles/pages/contact.module.scss"
 const FormSection = (props) => {
   const data = useStaticQuery(graphql`
     query {
-      file(relativePath: {eq: "about-2.JPG"}) {
+      file(relativePath: {eq: "what-we-do.jpg"}) {
         childImageSharp {
           gatsbyImageData
         }
