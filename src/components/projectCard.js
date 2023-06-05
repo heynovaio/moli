@@ -24,10 +24,9 @@ const ProjectCard = (props) => {
     }
   }
 
-  const wide = {
-    aspectRatio: '700/426'
-    
-  }
+  // const wide = {
+  //   aspectRatio: '700/426'
+  // }
   // const tall = {
   //   aspectRatio: '342/408'
   // }
@@ -68,10 +67,10 @@ const ProjectCard = (props) => {
                   <div dangerouslySetInnerHTML={{__html: expanded?.bio}}/>
                 </TextBox>
                 <div className={sty.BioImages}>
-                  <GatsbyImage image={image} style={wide}/>
+                  <GatsbyImage image={image}/>
                   {expanded?.additionalImages?.map((img,index) => (
                     // <GatsbyImage image={img} key={index} style={index % 3 === 2 ? tall : wide}/>
-                    <GatsbyImage image={img} key={index} style={wide}/>
+                    <GatsbyImage image={img} key={index}/>
                   ))}
                 </div>
               </div>

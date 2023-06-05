@@ -85,14 +85,12 @@
   top: 0;
   height: 100%;
 
-  z-index: 5;
+  z-index: 20;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-
-  
-
 }
+
 .BioBack {
   position: absolute;
   top: 0;
@@ -120,8 +118,13 @@
 .BioInner {
   background: white;
   height: max-content;
-  padding: 33px;
+  padding: 10px;
+
+  @media screen and (min-width: v.$tablet){
+    padding: 33px;
+  }
 }
+
 .BioTop {
   display:flex;
   justify-content: flex-end;
@@ -135,7 +138,10 @@
   flex: 1 1 450px;
   > div {
     grid-column: auto/span 1;
-    
+
+    @media screen and (min-width: v.$tablet){
+      aspect-ratio: 700/426;
+    }
   }
   > div:nth-child(3n-2){
     grid-column: auto/span 2;
