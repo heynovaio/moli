@@ -34,12 +34,12 @@ const StatSection = (props) => {
 
           <div className={Stat} style={{maxWidth: '350px'}}>
             <span>13YRS</span>
-            <p>ISO 9001 quality management system</p>
+            <p>ISO 9001 Quality Management System</p>
           </div>
 
           <div className={Stat}>
             <span>95%+</span>
-            <p>COR safety audit scores</p>
+            <p>COR Safety Audit Scores</p>
           </div>
         </div>
       </div>
