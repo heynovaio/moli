@@ -31,15 +31,15 @@ const ValuesSection = (props) => {
               </div>
               <div>
                 <h3 className="Subtitle-2">Performance</h3>
-                <p>Our fabrication shop uses state of the art Daito Seiki automated equipment. The equipment is recognized for their unsurpassed accuracy and speed.</p>
+                <p>We deliver excellence in all aspects of commercial steel manufacturing and construction. We offer unwavering dedication to quality and exceeding industry standards. Our unmatched approach to product innovation and precision guarantees exceptional project outcomes - every time.</p>
               </div>
               <div>
                 <h3 className="Subtitle-2">Safety</h3>
-                <p>We recognize that our employees are our most valued resources, as such we have established a sound safety program aimed at employee education and accident prevention. Our objective is to consistently exceed the legislative safety requirements, we attribute this achievement to over 28 years of membership and active participation with the Manufacturer’s Health & Safety Association, appointing external safety consultants to provide their valuable input and implementing our employee’s suggestions for improvement. </p>
+                <p>The safety and well-being of our team members is our top priority. Our robust safety program ensures a culture of education and accident prevention at all operational levels. With an extensive 28-year collaboration with the Manufacturer's Health and Safety Association, we continuously enhance our safety standards. We actively seek input from external safety consultants and value the suggestions from our dedicated employees, driving constant improvement. </p>
               </div>
               <div>
                 <h3 className="Subtitle-2">Reliability</h3>
-                <p>High skill base and extensive experience allows our team to consistently supply quality products, competitive pricing and timely delivery to meet the most demanding needs of our clients.</p>
+                <p>Industry-leading structures begin with top-level partnerships. Our unwavering commitment to reliability ensures that we consistently deliver the highest quality products at competitive prices, meeting your timelines with precision. We approach every project with warmth, integrity, and a genuine desire to exceed your expectations.</p>
               </div>
             </div>
           </div>
