@@ -363,6 +363,114 @@ export const ProjectImages = () => {
         )
       }
     }
+    misc_1: file(relativePath: {eq: "projects/misc_1.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_2: file(relativePath: {eq: "projects/misc_2.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_3: file(relativePath: {eq: "projects/misc_3.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_4: file(relativePath: {eq: "projects/misc_4.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_5: file(relativePath: {eq: "projects/misc_5.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_6: file(relativePath: {eq: "projects/misc_6.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_7: file(relativePath: {eq: "projects/misc_7.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_8: file(relativePath: {eq: "projects/misc_8.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_9: file(relativePath: {eq: "projects/misc_9.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_10: file(relativePath: {eq: "projects/misc_10.webp"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_11: file(relativePath: {eq: "projects/misc_11.webp"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_12: file(relativePath: {eq: "projects/misc_12.webp"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
   }
   `)
   return data;

@@ -47,6 +47,22 @@ const ProjectsSection = (props) => {
   const image10_2 = getImage(data.image10_2)
   const image10_3 = getImage(data.image10_3)
   const image10_4 = getImage(data.image10_4)
+  const misc_1 = getImage(data.misc_1)
+  const misc_2 = getImage(data.misc_2)
+  const misc_3 = getImage(data.misc_3)
+  const misc_4 = getImage(data.misc_4)
+  const misc_5 = getImage(data.misc_5)
+  const misc_6 = getImage(data.misc_6)
+  const misc_7 = getImage(data.misc_7)
+  const misc_8 = getImage(data.misc_8)
+  const misc_9 = getImage(data.misc_9)
+  const misc_10 = getImage(data.misc_10)
+  const misc_11 = getImage(data.misc_11)
+  const misc_12 = getImage(data.misc_2)
+
+
+
+
 
   return (
     <section>
@@ -155,6 +171,15 @@ const ProjectsSection = (props) => {
             expanded={{
               bio: `<div><div>The post-secondary institution underwent an expansion in 2001.</div><div>Our scope of work:</div><div><ul><li><div>Approximately $1.5 million in steel work</div></li><li>Long span trusses, about 120’ in length</li><li><div>Very heavy interior steel work for Heritage Building</div></li></ul></div></div>`,
               additionalImages: [image8_2,image8_3,image8_4]
+            }}
+          /> 
+          <ProjectCard
+            image={misc_1}
+            number='11'
+            name='Miscellaneous Steel'
+            expanded={{
+              bio: '',
+              additionalImages: [misc_2,misc_3,misc_4,misc_5,misc_6,misc_7,misc_8,misc_9,misc_10,misc_11,misc_12]
             }}
           /> 
         </div>
