@@ -4,6 +4,7 @@ import { ProjectsGrid } from '../../styles/pages/projects.module.scss'
 
 import ProjectCard from "../projectCard"
 import { ProjectImages } from "../../hooks/project-image-hooks"
+
 const ProjectsSection = (props) => {
   const data = ProjectImages()
 
@@ -45,7 +46,6 @@ const ProjectsSection = (props) => {
   const image10_3 = getImage(data.image10_3)
   const image10_4 = getImage(data.image10_4)
 
-
   return (
     <section>
       <div className="LineGraphic3">
@@ -58,8 +58,35 @@ const ProjectsSection = (props) => {
         <h1>Featured Projects</h1>
         <div className={ProjectsGrid}>
           <ProjectCard
-            image={image1_1}
+            image={image7_1}
             number='01'
+            name='Custom work for private residence'
+            expanded={{
+              bio: `<div>Moli has worked on many residential structures over the years, from large multi-family projects to single-family detached homes.&nbsp;</div><div>The single-family homes are often the most interesting and challenging projects, as they require close coordination with trades to meet very strict requirements. There are all sorts of challenges that can be involved in these projects, from meeting extremely strict floor depth requirements to having floating artistic stairs without any intermediate structural supports.</div>`,
+              additionalImages: [image7_2,image7_3,image7_4]
+            }}
+          />
+           <ProjectCard
+            image={image9_1}
+            number='02'
+            name='Cochrane Automotive Storage'
+            expanded={{
+              bio: `<div></div>`,
+              additionalImages: [image9_2,image9_3,image9_4]
+            }}
+          /> 
+           <ProjectCard
+            image={image10_1}
+            number='03'
+            name='Calgary Airport Casino'
+            expanded={{
+              bio: `<div></div>`,
+              additionalImages: [image10_2,image10_3,image10_4]
+            }}
+          /> 
+          <ProjectCard
+            image={image1_1}
+            number='04'
             name='Ronmor Phase III Building Lift'
            
             expanded={{
@@ -69,7 +96,7 @@ const ProjectsSection = (props) => {
           />
           <ProjectCard
             image={image2_1}
-            number='02'
+            number='05'
             name='Stampede Roundup Center Expansion'
             
             expanded={{
@@ -79,7 +106,7 @@ const ProjectsSection = (props) => {
           />
           <ProjectCard
             image={image3_1}
-            number='03'
+            number='06'
             name='Chateau Lake Louise Conference Center'
            
             expanded={{
@@ -90,7 +117,7 @@ const ProjectsSection = (props) => {
           />
           <ProjectCard
             image={image4_1}
-            number='04'
+            number='07'
             name='Northern Telecom Wireless Facility'
             expanded={{
               bio: `<div><p>Our work on this project was completed for Nortel Networks in 1995. In 2009 it became the Calgary Police Service Headquarters.</p><p>As this was during the peak business period for Nortel, the project was extremely demanding on results, in particular the schedule. This resulted in our crews working over 30' in the air in -30 degree weather to meet the client requirements. For our ability to meet their extreme demands without sacrificing quality, Moli received multiple awards for this work, including the&nbsp; Steve Phelps Mission Impossible Award from the Royal Architectural Order of Westwinds.</p>
@@ -102,7 +129,7 @@ const ProjectsSection = (props) => {
           />
           <ProjectCard
             image={image5_1}
-            number='05'
+            number='08'
             name='Country Club of the Hamptons'
 
             expanded={{
@@ -112,7 +139,7 @@ const ProjectsSection = (props) => {
           />
           <ProjectCard
             image={image6_1}
-            number='06'
+            number='09'
             name='Trail Community Center'
             expanded={{
               bio: `<div>This project involved design &amp; construction of a 3-dimensional truss system to support the large spanning roof areas.</div><div>Similar to the Chateau Lake Louise Meeting Conference Centre, the site work on this project was limited by access, and a large crane could not be brought in to install the steel. Creative approaches to the installation were required to complete this work.</div>`,
@@ -120,39 +147,12 @@ const ProjectsSection = (props) => {
             }}
           />  
           <ProjectCard
-            image={image7_1}
-            number='07'
-            name='Custom work for private residence'
-            expanded={{
-              bio: `<div>Moli has worked on many residential structures over the years, from large multi-family projects to single-family detached homes.&nbsp;</div><div>The single-family homes are often the most interesting and challenging projects, as they require close coordination with trades to meet very strict requirements. There are all sorts of challenges that can be involved in these projects, from meeting extremely strict floor depth requirements to having floating artistic stairs without any intermediate structural supports.</div>`,
-              additionalImages: [image7_2,image7_3,image7_4]
-            }}
-          />
-          <ProjectCard
             image={image8_1}
-            number='08'
+            number='10'
             name='Southern Alberta Institute of Technology'
             expanded={{
               bio: `<div><div>The post-secondary institution underwent an expansion in 2001.</div><div>Our scope of work:</div><div><ul><li><div>Approximately $1.5 million in steel work</div></li><li>Long span trusses, about 120’ in length</li><li><div>Very heavy interior steel work for Heritage Building</div></li></ul></div></div>`,
               additionalImages: [image8_2,image8_3,image8_4]
-            }}
-          /> 
-           <ProjectCard
-            image={image9_1}
-            number='09'
-            name='Cochrane Automotive Storage'
-            expanded={{
-              bio: `<div></div>`,
-              additionalImages: [image9_2,image9_3,image9_4]
-            }}
-          /> 
-           <ProjectCard
-            image={image10_1}
-            number='10'
-            name='Calgary Airport Casino'
-            expanded={{
-              bio: `<div></div>`,
-              additionalImages: [image10_2,image10_3,image10_4]
             }}
           /> 
         </div>

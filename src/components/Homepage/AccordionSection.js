@@ -13,7 +13,7 @@ const AccordionSection = () => {
 
   const data = useStaticQuery(graphql`
     query {
-      detail_3: file(relativePath: {eq: "what-we-do.jpg"}) {
+      detail_3: file(relativePath: {eq: "detail_3.webp"}) {
         childImageSharp {
           gatsbyImageData(
             width: 749

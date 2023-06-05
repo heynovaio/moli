@@ -13,7 +13,7 @@ const CarouselSection = (props) => {
 
   const data = useStaticQuery(graphql`
     query {
-      image1: file(relativePath: {eq: "projects/project-1-1.JPG"}) {
+      image1: file(relativePath: {eq: "projects/project-7-1.webp"}) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
@@ -22,7 +22,7 @@ const CarouselSection = (props) => {
           )
         }
       }
-      image2: file(relativePath: {eq: "projects/project-2-1.JPG"}) {
+      image2: file(relativePath: {eq: "projects/project-9-1.jpg"}) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
@@ -31,16 +31,7 @@ const CarouselSection = (props) => {
           )
         }
       }
-      image3: file(relativePath: {eq: "projects/project-3-1.JPG"}) {
-        childImageSharp {
-          gatsbyImageData(
-            layout: FULL_WIDTH
-            width: 740
-            height: 391
-          )
-        }
-      }
-      image4: file(relativePath: {eq: "projects/project-4-1.jpg"}) {
+      image3: file(relativePath: {eq: "projects/project-10-1.jpg"}) {
         childImageSharp {
           gatsbyImageData(
             layout: FULL_WIDTH
@@ -54,7 +45,7 @@ const CarouselSection = (props) => {
   const image1 = getImage(data.image1)
   const image2 = getImage(data.image2)
   const image3 = getImage(data.image3)
-  const image4 = getImage(data.image4)
+  // const image4 = getImage(data.image4)
 
   return (
     <section className={carousel}>
@@ -90,7 +81,7 @@ const CarouselSection = (props) => {
             <ProjectCard
               image={image1}
               number='01'
-              name='Ronmor Phase III Building Lift'
+              name='Custom work for private residence'
               
             />
           </li>
@@ -98,7 +89,7 @@ const CarouselSection = (props) => {
             <ProjectCard
               image={image2}
               number='02'
-              name='Stampede Roundup Center Expansion'
+              name='Cochrane Automotive Storage'
              
             />
           </li>
@@ -106,11 +97,10 @@ const CarouselSection = (props) => {
             <ProjectCard
               image={image3}
               number='03'
-              name='Chateau Lake Louise Conference Center Name'
-
+              name='Calgary Airport Casino'
             />
           </li>
-          <li className={CarouselItem}>
+          {/* <li className={CarouselItem}>
             <ProjectCard
               image={image4}
               number='04'
@@ -118,7 +108,7 @@ const CarouselSection = (props) => {
               description='Nunc nisl aliquam odio vitae odio adipiscing. Metus aenean amet a facilisis natoque.'
               type='commercial'
             />
-          </li>
+          </li> */}
         </ul>
         
       </div>
