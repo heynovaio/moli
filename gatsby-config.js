@@ -14,8 +14,8 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Moli`,
-    description: `Moli Site.`,
+    title: `Moli Industries LTD`,
+    description: `Moli offers exceptional structural steel solutions in Calgary and beyond. With over three decades of industry expertise, Moli Industries Ltd. is renowned in Western Canada’s construction landscape. From structural engineering design, manufacturing, and structural steel erection to miscellaneous steel fabrication, our dedicated team of welders and ironworkers excels in delivering outstanding projects that redefine the possibilities of structural steel. With a dynamic and competitive approach, Moli has carved a niche in the steel construction industry, earning a well-deserved reputation for excellence. Whether it’s large-scale projects in Calgary or ventures across Western Canada, we bring unparalleled experience and unwavering commitment to every endeavour. Discover the Moli advantage and unlock the potential of your project. Explore moli.ca today and experience the superior craftsmanship, reliability, and innovation that set us apart.`,
     author: `HeyNova`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },

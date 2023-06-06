@@ -12,7 +12,7 @@ const ValuesSection = (props) => {
         <div className="FlexWrap" style={{alignItems: 'flex-start'}}>
           <TextBox width={624}>
             <h2>Our Mission </h2>
-            <p className="BodyText">is to provide exceptional steel design, fabrication, and erection services through ongoing innovation, skilled production, and a marked commitment to excellence.</p>
+            <p className="BodyText">to provide exceptional steel design, fabrication, and erection services through ongoing innovation, skilled production, and a marked commitment to excellence.</p>
             <Link to="/about" className="BtnContained">
               Learn More
             </Link>
