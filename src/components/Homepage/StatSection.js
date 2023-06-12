@@ -28,8 +28,8 @@ const StatSection = (props) => {
           </div>  
 
           <div className={Stat}>
-            <span>88K</span>
-            <p>Sq. ft. Shop Space</p>
+            <span>80K</span>
+            <p>Sq. ft. Manufacturing Facility</p>
           </div>
 
           <div className={Stat} style={{maxWidth: '350px'}}>
