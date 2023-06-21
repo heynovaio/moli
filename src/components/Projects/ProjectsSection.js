@@ -59,10 +59,6 @@ const ProjectsSection = (props) => {
   const misc_11 = getImage(data.misc_11)
   const misc_12 = getImage(data.misc_2)
 
-
-
-
-
   return (
     <section>
       <div className="LineGraphic3">
