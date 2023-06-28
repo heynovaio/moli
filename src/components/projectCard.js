@@ -62,10 +62,10 @@ const ProjectCard = (props) => {
                 </button>
               </div>
               <div className="FlexWrap" style={{alignItems: 'stretch', gap: 30, justifyContent: 'space-evenly', flexWrap: 'wrap'}}>
-                <TextBox width={411}>
+                <div className={sty.BioInfo}>
                   <p className={sty.Name}>{name}</p>
                   <div dangerouslySetInnerHTML={{__html: expanded?.bio}}/>
-                </TextBox>
+                </div>
                 <div className={sty.BioImages}>
                   <GatsbyImage image={image} className={sty.bioImage}/>
                   {expanded?.additionalImages?.map((img,index) => (

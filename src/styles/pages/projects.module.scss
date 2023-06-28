@@ -2,25 +2,26 @@
 
 .ProjectsGrid {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   row-gap: 60px;
   column-gap: 40px;
   flex-wrap: wrap;
   margin-top: 40px;
   max-width: 100%;
 
-  @media screen and (max-width: v.$tablet){
-    justify-content: center;
+  @media screen and (min-width: v.$tablet){
+    justify-content: space-between;
   }
 }
 
 .Card {
   width: 700px;
-  max-width: 46vw;
   position: relative;
+  max-width: 100%;
 
-  @media screen and (max-width: v.$tablet){
-    max-width: 100%;
+
+  @media screen and (min-width: v.$tablet){
+    max-width: 46vw;
   }
 }
 .ImageWrap {
@@ -62,7 +63,7 @@
     line-height: 1;
     display: block;
     align-self: flex-start;
-    @media screen and (max-width: 1024px){
+    @media screen and (max-width: v.$tablet){
       font-size: 1.8rem;
     }
   }
@@ -73,7 +74,7 @@
   max-width: 500px;
   line-height: 1.2;
   margin-bottom: 20px;
-  @media screen and (max-width: 1024px){
+  @media screen and (max-width: v.$tablet){
     font-size: 1.4rem;
   }
  
@@ -127,6 +128,18 @@
 
   @media screen and (min-width: v.$tablet){
     padding: 33px;
+  }
+}
+
+
+.BioInfo {
+  @media screen and (min-width: v.$tablet){
+    max-width: 80ch;
+    margin-left: 0;
+  }
+
+ @media screen and (min-width: v.$desktop){
+    max-width: 420px;
   }
 }
 
