@@ -141,17 +141,24 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px;
   flex: 1 1 90vh;
+
   > div {
     grid-column: auto/span 1;
 
     @media screen and (min-width: v.$tablet){
       aspect-ratio: 700/426;
-      max-width: 700px;
+      // max-width: 700px;
       flex: 1 1 450px;
     }
   }
   > div:nth-child(3n-2){
     grid-column: auto/span 2;
+  }
+}
+
+.bioImage {
+  img {
+    height: auto;
   }
 }
 

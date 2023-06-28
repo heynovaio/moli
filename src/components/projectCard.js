@@ -35,7 +35,7 @@ const ProjectCard = (props) => {
     
       <div className={sty.Card}>
         <div className={sty.ImageWrap}>
-          <GatsbyImage image={image} style={{aspectRatio:'740/390'}} alt=""/>
+          <GatsbyImage image={image} style={{aspectRatio:'740/390'}} alt="" />
           {expanded && 
             <button className={sty.Expand} onClick={() => setExpandState(!expandState)} aria-label='Expand Project Info'>
               <FaExpandAlt/>
@@ -67,7 +67,7 @@ const ProjectCard = (props) => {
                   <div dangerouslySetInnerHTML={{__html: expanded?.bio}}/>
                 </TextBox>
                 <div className={sty.BioImages}>
-                  <GatsbyImage image={image}/>
+                  <GatsbyImage image={image} className={sty.bioImage}/>
                   {expanded?.additionalImages?.map((img,index) => (
                     // <GatsbyImage image={img} key={index} style={index % 3 === 2 ? tall : wide}/>
                     <GatsbyImage image={img} key={index}/>
@@ -79,7 +79,6 @@ const ProjectCard = (props) => {
           <div className={sty.BioBack} onClick={() => setExpandState(!expandState)} tabIndex={0} style={{height: findHeight()}} role="button" aria-label="Close content"/>
         </div>
       }
-      
     </>
   )
 }
