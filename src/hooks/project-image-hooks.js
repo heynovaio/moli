@@ -363,6 +363,33 @@ export const ProjectImages = () => {
         )
       }
     }
+    image10_5: file(relativePath: {eq: "projects/project-10-5.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image10_6: file(relativePath: {eq: "projects/project-10-6.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    image10_7: file(relativePath: {eq: "projects/project-10-7.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
     misc_1: file(relativePath: {eq: "projects/misc_1.jpg"}) {
       childImageSharp {
         gatsbyImageData(

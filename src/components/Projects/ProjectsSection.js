@@ -46,6 +46,9 @@ const ProjectsSection = (props) => {
   const image10_2 = getImage(data.image10_2)
   const image10_3 = getImage(data.image10_3)
   const image10_4 = getImage(data.image10_4)
+  const image10_5 = getImage(data.image10_5)
+  const image10_6 = getImage(data.image10_6)
+  const image10_7 = getImage(data.image10_7)
   const misc_1 = getImage(data.misc_1)
   const misc_2 = getImage(data.misc_2)
   const misc_3 = getImage(data.misc_3)
@@ -89,12 +92,12 @@ const ProjectsSection = (props) => {
             }}
           /> 
            <ProjectCard
-            image={image10_1}
+            image={image10_5}
             number='03'
             name='Calgary Airport Casino'
             expanded={{
               bio: `<div></div>`,
-              additionalImages: [image10_2,image10_3,image10_4]
+              additionalImages: [image10_6, image10_7, image10_1, image10_2,image10_3,image10_4]
             }}
           /> 
           <ProjectCard
