@@ -29,8 +29,7 @@ const ValuesSection = (props) => {
             <div className={ValueGrid}>
               <div>
                 <h3 className="Subtitle-2">Quality</h3>
-                <p>We are committed to quality in all aspects of the commercial steel industry. Going beyond current compliance laws and regulations, we seek continuous opportunities for improvement to provide safe, accurate, and timely project solutions.</p>
-              </div>
+                <p>Our policy principles are to comply with all applicable laws and regulations, diligence to safety, seek continual improvements and open communication to uphold the quality management system.</p>              </div>
               <div>
                 <h3 className="Subtitle-2">Performance</h3>
                 <p>We deliver excellence in all aspects of commercial steel manufacturing and construction. We offer unwavering dedication to quality and exceeding industry standards. Our unmatched approach to product innovation and precision guarantees exceptional project outcomes - every time.</p>

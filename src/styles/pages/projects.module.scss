@@ -153,25 +153,38 @@
   display: Grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
-  flex: 1 1 90vh;
+  flex: 1 1 auto;
 
   > div {
     grid-column: auto/span 1;
+    min-height: 200px;
+    height: auto;
+
+    @media screen and (min-width: 350px){
+      min-height: 300px;
+    }
+
+    @media screen and (min-width: 450px){
+      min-height: 400px;
+    }
 
     @media screen and (min-width: v.$tablet){
       aspect-ratio: 700/426;
-      // max-width: 700px;
       flex: 1 1 450px;
     }
   }
   > div:nth-child(3n-2){
     grid-column: auto/span 2;
   }
+
+  @media screen and (min-width: v.$tablet){
+    flex: 1 1 90vh;
+  }
 }
 
 .bioImage {
   img {
-    height: auto;
+    height: auto !important;
   }
 }
 
