@@ -21,7 +21,7 @@ const ProjectsSection = (props) => {
   const image4_2 = getImage(data.image4_2)
   const image4_3 = getImage(data.image4_3)
   const image5_1 = getImage(data.image5_1)
-  const image5_2 = getImage(data.image5_2)
+  // const image5_2 = getImage(data.image5_2)
   const image5_3 = getImage(data.image5_3)
   const image5_4 = getImage(data.image5_4)
   const image5_5 = getImage(data.image5_5)
@@ -54,13 +54,13 @@ const ProjectsSection = (props) => {
   const misc_3 = getImage(data.misc_3)
   const misc_4 = getImage(data.misc_4)
   const misc_5 = getImage(data.misc_5)
-  const misc_6 = getImage(data.misc_6)
+  // const misc_6 = getImage(data.misc_6)
   const misc_7 = getImage(data.misc_7)
-  const misc_8 = getImage(data.misc_8)
+  // const misc_8 = getImage(data.misc_8)
   const misc_9 = getImage(data.misc_9)
   const misc_10 = getImage(data.misc_10)
   const misc_11 = getImage(data.misc_11)
-  const misc_12 = getImage(data.misc_2)
+  // const misc_12 = getImage(data.misc_2)
 
   return (
     <section>
@@ -177,7 +177,7 @@ const ProjectsSection = (props) => {
             name='Miscellaneous Steel'
             expanded={{
               bio: '',
-              additionalImages: [misc_2,misc_3,misc_4,misc_5,misc_6,misc_7,misc_8,misc_9,misc_10,misc_11,misc_12]
+              additionalImages: [misc_2,misc_3,misc_4,misc_5,misc_7,misc_9,misc_10,misc_11]
             }}
           /> 
         </div>
