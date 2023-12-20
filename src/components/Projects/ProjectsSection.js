@@ -49,10 +49,10 @@ const ProjectsSection = (props) => {
   const image10_5 = getImage(data.image10_5)
   const image10_6 = getImage(data.image10_6)
   const image10_7 = getImage(data.image10_7)
-  const misc_1 = getImage(data.misc_1)
-  const misc_2 = getImage(data.misc_2)
-  const misc_3 = getImage(data.misc_3)
-  const misc_4 = getImage(data.misc_4)
+  // const misc_1 = getImage(data.misc_1)
+  // const misc_2 = getImage(data.misc_2)
+  // const misc_3 = getImage(data.misc_3)
+  // const misc_4 = getImage(data.misc_4)
   const misc_5 = getImage(data.misc_5)
   // const misc_6 = getImage(data.misc_6)
   const misc_7 = getImage(data.misc_7)
@@ -61,6 +61,12 @@ const ProjectsSection = (props) => {
   const misc_10 = getImage(data.misc_10)
   const misc_11 = getImage(data.misc_11)
   // const misc_12 = getImage(data.misc_2)
+  const misc_13 = getImage(data.misc_13)
+  const misc_14 = getImage(data.misc_14)
+  const misc_15 = getImage(data.misc_15)
+  const misc_16 = getImage(data.misc_16)
+  const misc_17 = getImage(data.misc_17)
+  const misc_18 = getImage(data.misc_18)
 
   return (
     <section>
@@ -172,12 +178,12 @@ const ProjectsSection = (props) => {
             }}
           /> 
           <ProjectCard
-            image={misc_1}
+            image={misc_13}
             number='11'
             name='Miscellaneous Steel'
             expanded={{
               bio: '',
-              additionalImages: [misc_2,misc_3,misc_4,misc_5,misc_7,misc_9,misc_10,misc_11]
+              additionalImages: [misc_14,misc_15,misc_16,misc_17,misc_18,misc_5,misc_7,misc_9,misc_10,misc_11]
             }}
           /> 
         </div>

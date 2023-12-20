@@ -498,6 +498,60 @@ export const ProjectImages = () => {
         )
       }
     }
+    misc_13: file(relativePath: {eq: "projects/misc_13.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_14: file(relativePath: {eq: "projects/misc_14.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_15: file(relativePath: {eq: "projects/misc_15.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_16: file(relativePath: {eq: "projects/misc_16.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_17: file(relativePath: {eq: "projects/misc_17.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
+    misc_18: file(relativePath: {eq: "projects/misc_18.jpg"}) {
+      childImageSharp {
+        gatsbyImageData(
+          layout: FULL_WIDTH
+          width: 740
+          height: 391
+        )
+      }
+    }
   }
   `)
   return data;
